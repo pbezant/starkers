@@ -1,80 +1,330 @@
 /*
-Theme Name: 	Starkers
-Theme URI: 		http://viewportindustries.com/products/starkers
-Description: 	The totally nude Wordpress theme!
-Version: 		4.0
-Author: 		Elliot Jay Stocks & Keir Whitaker
-Author URI: 	http://viewportindustries.com
-Tags: 			starkers, naked, clean, basic
+Theme Name: Starkers
+Theme URI: http://elliotjaystocks.com
+Description: The totally nude Wordpress theme. Phwoar! (Based on Twenty Ten)
+Version: 3.0
+Author: Elliot Jay Stocks
+Author URI: http://elliotjaystocks.com
+Tags: starkers, naked, clean, basic
 */
-
-/*
-===========================
-CONTENTS:
-
-01 Sensible defaults
-02 Typography
-03 Media queries 
-===========================
-*/
-
-/* ---------------------------------------------------------------------------------------------------------- 
-01 Sensible defaults ----------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------- */
-
+*{ border:1px solid black;}
 @import "css/reset.css";
 
-div,
-article,
-section,
-header,
-footer,
-nav,
-li					{ position:relative; /* For absolutely positioning elements within containers (add more to the list if need be) */ }
-.group:after 		{ display:block; height:0; clear:both; content:"."; visibility:hidden; /* For clearing */ }
-body 				{ background:#fff; /* Don't forget to style your body to avoid user overrides */ }
-::-moz-selection 	{ background:#ff0; color:#333; }
-::selection 		{ background:#ff0; color:#333; }
-
-/* ---------------------------------------------------------------------------------------------------------- 
-02 Typography -----------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------- */
-/*
-
-14 / 16	= 		0.875em 		(14px equivalent)
-16 / 16	= 		1em 			(16px equivalent)
-18 / 16 = 		1.125em 		(18px equivalent)
-21 / 16 = 		1.3125em 		(21px equivalent)
-24 / 16 = 		1.5em 			(24px equivalent)
-30 / 16 = 		1.875em 		(30px equivalent)
-
-*/
-
-body,
-input,
-textarea 			{ /* We strongly recommend you declare font-weight using numerical values, but check to see which weights you're exporting first */ }
-
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6 					{ font-weight:bold; /* This helps to identify headings at the initial build stage, but you should write something more precise later on */ }
-
-/* ---------------------------------------------------------------------------------------------------------- 
-03 Media queries (using a mobile-first approach) ------------------------------------------------------------
----------------------------------------------------------------------------------------------------------- */
-
-/* 400 and up */
-@media screen and (min-width:400px) {
-
-					{ /* Place your styles here for all widths greater than 400px */ }
-
+body{
+	background-color:#DBD9D4;
+	width:100%;
+	font-size:17px;
+	line-height:29px;
+	font-family: 'Mercury SSm A', 'Mercury SSm B', georgia, serif;
+	font-weight: 300;
+	font-style: normal;
 }
 
-/* Retina Display */
-@media screen and (-webkit-min-device-pixel-ratio:2) {
+#content-main p{text-indent:25px;}
 
-					{ /* Place your styles here for all 'Retina' screens */ }
-
+#page-wrap{
+	margin:20px;
+	padding:0px 37px;
+	background-color:#fff;
+	-moz-box-shadow: 0px 0px 5px #a2a2a2;
+	-webkit-box-shadow: 0px 0px 5px #a2a2a2;
+	box-shadow: 0px 0px 5px #a2a2a2;
+	overflow:hidden;
+	position:relative;
+	min-height:500px;
+	z-index:100;
 }
+
+img{max-width:100%;}
+
+#main{
+	max-width:1000px;
+	margin:0px auto;
+	padding:0px 20px 50px;
+/*	overflow:hidden;*/
+	position:relative;
+}
+
+header{
+	position:relative;
+	z-index:100;
+	max-width:1000px;
+	margin:0px auto;
+	padding:0px;
+}
+
+nav{
+	text-align:right;
+	position:absolute;
+	top:0;
+	right:20px;
+	font-size: 14px;
+	
+	font-weight: 400;
+}
+
+
+nav ul li{display:inline; margin-left:15px;}
+
+#sidebar{
+	float:left;
+	font-size:12px;
+	line-height:19px;
+	width:270px;
+	font-weight: 400;
+	padding-bottom:50px;
+	z-index:1;
+}
+
+#sidebar.fixed{
+	top:0px;
+	margin-top:30px;
+	position:fixed;
+}
+
+#showcase-nav-right.fixed{
+	position:fixed;
+	margin-top:30px;
+}
+
+#showcase-nav.fixed{
+	position:fixed;
+	margin-top:30px;
+}
+
+#sidebar p{margin-bottom:25px;}
+
+#sidebar ul li, #bio-wrap ul li{
+	font-size: 14px;
+	margin-bottom: 7px;	
+	font-weight: 400;
+	list-style:none;
+	line-height:20px;
+}
+
+#sidebar ul.cat-posts li{
+	font-size: 12px;
+	padding-bottom: 5px;
+	margin-bottom:0px;	
+	font-weight: 400;
+	list-style:none;
+	line-height:18px;
+}
+
+#sidebar ul.cat-posts li:before{
+	content:'»';
+	margin-right:10px;
+}
+
+#sidebar ul.cat-posts{
+	padding-top:10px;
+	padding-bottom:20px;
+/*	height:0px;*/
+}
+
+#sidebar ul li.current-cat a{
+	color:#f5883b;
+}
+
+#content-main{
+	margin-left:310px;
+	overflow:hidden;
+	margin-bottom:60px;
+}
+
+#footer-wrap{
+	width:100%;
+	text-align:left;
+	position:relative;	
+	overflow:hidden;
+}
+
+.screen-reader-text{
+	opacity:0;
+}
+
+#footer-wrap input#s{
+	float:right;
+	border:none;
+	width:200px;
+	padding:15px 40px 15px 20px;
+	font-weight:300;
+	font-size: 14px;
+	outline:none;
+	margin-right:20px;
+	-webkit-border-radius: 25px;
+  	-moz-border-topleft: 25px;
+	border-radius:25px;
+	-moz-box-shadow: inset 1px 1px 3px #8a8883;
+	-webkit-box-shadow: inset 1px 1px 3px #8a8883;
+	box-shadow: inset 1px 1px 3px #8a8883;
+	background-color:#eae8e2;
+	transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+}
+
+#footer-wrap input#s:focus{
+	outline: none;
+	background-color:#fff;
+	border:none;
+}
+
+#footer-wrap input#searchsubmit{
+	background: url("http://www.jessica.is.php5-23.dfw1-2.websitetestlink.com/wp-content/themes/Starkers/images/search-ico.png") no-repeat;
+	background-position:50% 50%;
+	width: 20px;
+	height: 20px;
+	text-indent: -9999px;
+	padding:20px;
+	width:30px;
+	height:30px;
+	border: none;
+	position: absolute;
+	right:22px;
+	top:8px;
+	cursor: pointer;
+	-webkit-border-radius: 25px;
+  	-moz-border-radius: 25px;
+	border-radius:25px;
+	transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+}
+
+#footer-wrap .screen-reader-text{
+	color:#dbd9d4;
+}
+
+#footer2{
+	margin-left:250px;
+	border-left:solid 1px #dbd9d4;
+	padding-left:15px;
+}
+
+.ornament{
+	width:20px;
+	margin-right:7px;
+}
+
+img.tiny-logo{
+	position:absolute;
+	top:-30px;
+	width:34px;
+}
+
+em{font-weight:inherit;}
+
+a{
+	text-decoration:none;
+	color:#000;
+	transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+}
+
+a:hover{
+	color:#f5883b;
+	cursor:pointer;
+}
+
+p a{
+	border-bottom: 1px dotted #dbd9d4;
+	padding-bottom:2px;
+}
+
+h3{
+	text-indent: 0px;
+	margin-top:30px;
+	padding-bottom:15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #DBD9D4;
+	font-weight: 400;
+}
+
+#sidebar h3, #bio-wrap h3, #bio-wrap h4{
+	margin-bottom:10px;
+	padding-bottom:11px;	
+	font-family: 'Mercury SSm Small Caps A', 'Mercury SSm Small Caps B', georgia, serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 15px;
+	letter-spacing: 2px;
+	line-height:20px;
+}
+
+ol .entry-content h3{
+	font-size: 22px;
+	margin-top: 0px;
+	font-family: 'Mercury SSm A', 'Mercury SSm B', georgia, serif;
+	color:#000;
+}
+
+.entry-content h3{
+	font-size:22px;
+	margin-top:40px;
+	line-height:32px;
+	font-family: 'Mercury SSm A', 'Mercury SSm B', georgia, serif;
+	color:#000;
+}
+
+h1{
+	font-family: 'Whitney A', 'Whitney B', Verdana, sans-serif;
+	font-weight: 400;
+	text-indent: 0px;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+
+
+h1.page-title{
+	line-height: 24px;
+	margin-bottom: 14px;
+	text-indent: 0px;
+	font-size: 28px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #DBD9D4;
+	line-height: 29px;
+	margin-bottom: 12px;
+	padding-bottom: 10px;
+	font-size: 23px;
+	letter-spacing:1px;
+}
+
+h1.entry-title{
+	line-height: 50px;
+	border-bottom: 4px double #DBD9D4;
+	font-size: 50px;
+	font-weight: 300;
+}
+
+header.entry-header h1.entry-title{
+	line-height: 29px;
+	margin-bottom: 12px;
+	padding-bottom: 10px;
+	font-size: 23px;
+	border-bottom: 1px solid #DBD9D4;
+	font-weight:400;
+	letter-spacing:1px;
+	margin-top:0px;
+}
+
+
+
+h1.logo{
+	margin-left: 50px;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 15px;
+	letter-spacing: 2px;
+	padding-bottom:0px;
+}
+
+
+div.video iframe{
+	margin-bottom:10px;
+	padding-bottom:20px;
+	border-bottom: 1px solid #dbd9d4;
+}
+
+
