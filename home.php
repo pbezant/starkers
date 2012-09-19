@@ -16,13 +16,16 @@ Template Name: Home
 	query_posts($args);
 	if( have_posts() ) :?>
 	<?php while ( have_posts() ) : the_post(); ?>
-		<?php 
-		$category = get_the_category(); 
-		
-		?>
 		<div id="entry-content" <?php post_class(); ?>>
-		<h2><a href="<?php the_title();?>"><?php the_title(); ?></a></h2>
-		<?php the_content(); ?>
+			<h2><a href="<?php echo get_permalink(); ?>">
+				<?php if ( has_post_thumbnail() ) {
+					set_post_thumbnail_size( 150, 150, true );
+					the_post_thumbnail();
+				}
+				else
+				the_title(); ?></a>
+			</h2>
+			<?php the_content(); ?>
 		</div>
 	<?php endwhile; ?>
 	<?php endif; ?>
