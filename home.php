@@ -16,9 +16,13 @@ Template Name: Home
 	query_posts($args);
 	if( have_posts() ) :?>
 	<?php while ( have_posts() ) : the_post(); ?>
-		<div id="entry-content">
-		<a href="<?php the_title();?>"><h2><?php the_title(); ?></h2></a>
-		<?php the_excerpt(); ?>
+		<?php 
+		$category = get_the_category(); 
+		
+		?>
+		<div id="entry-content" <?php post_class(); ?>>
+		<h2><a href="<?php the_title();?>"><?php the_title(); ?></a></h2>
+		<?php the_content(); ?>
 		</div>
 	<?php endwhile; ?>
 	<?php endif; ?>
