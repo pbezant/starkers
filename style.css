@@ -20,8 +20,6 @@ body{
 	font-style: normal;
 }
 
-#content-main p{text-indent:25px;}
-
 #page-wrap{
 	margin:20px;
 	padding:0px 37px;
@@ -109,10 +107,45 @@ nav ul li{display:inline; margin-left:15px;}
 	margin-bottom:60px;
 }
 
-#entry-content{
-	width:30%;
-	float:left;
-	margin:.6em;
+
+
+#entry-content {
+  position: relative;
+  margin: .55em;
+  z-index: 1;
+  float:left;
+  width:30%;
+  overflow:hidden;
+  display:inline-block;
+  height:13em;
+  -moz-perspective: 1000;
+}
+
+#f1_card {
+  width: 100%;
+  height: 100%;
+  -moz-transform-style: preserve-3d;
+  -moz-transition: all 1.0s linear;
+}
+#entry-content:hover #f1_card {
+	cursor: pointer;
+  -moz-transform: rotateY(180deg);
+  box-shadow: -5px 5px 5px #aaa;
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -moz-backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  -moz-transform: rotateY(180deg);
+  -moz-box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: #aaa;
 }
 
 #footer-wrap{
