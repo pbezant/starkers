@@ -14,19 +14,21 @@ Template Name: Home
 		while ($archive_query->have_posts()) : $archive_query->the_post(); ?>
 			<div id="entry-content" <?php post_class(); ?>>
 			<div id="f1_card">
+				<a href="<?php echo get_permalink(); ?>">
 				<div class="front face">
-				 	<a href="<?php echo get_permalink(); ?>">
+				 	
 					<?php if ( has_post_thumbnail() ) {
 						//set_post_thumbnail_size( 150, 150, true );
 						the_post_thumbnail();
 					}
 					else
 						echo "<h2>".get_the_title()."</h2>"; ?>
-					</a>
+					
 				</div>
 				<div class="back face center">
 					<?php the_excerpt(); ?>
 				</div>
+				</a>
 			</div>
 			</div>
 		<?php endwhile; ?>
