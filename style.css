@@ -94,7 +94,7 @@ nav ul li{display:inline; margin-left:15px;}
 
 #sidebar p{margin-bottom:25px;}
 
-#sidebar ul li, #bio-wrap ul li{
+#sidebar ul li{
 	font-size: 14px;
 	margin-bottom: 7px;	
 	font-weight: 400;
@@ -102,34 +102,17 @@ nav ul li{display:inline; margin-left:15px;}
 	line-height:20px;
 }
 
-#sidebar ul.cat-posts li{
-	font-size: 12px;
-	padding-bottom: 5px;
-	margin-bottom:0px;	
-	font-weight: 400;
-	list-style:none;
-	line-height:18px;
-}
-
-#sidebar ul.cat-posts li:before{
-	content:'»';
-	margin-right:10px;
-}
-
-#sidebar ul.cat-posts{
-	padding-top:10px;
-	padding-bottom:20px;
-/*	height:0px;*/
-}
-
-#sidebar ul li.current-cat a{
-	color:#f5883b;
-}
 
 #content-main{
-	margin-left:310px;
+	margin-left:280px;
 	overflow:hidden;
 	margin-bottom:60px;
+}
+
+#entry-content{
+	width:30%;
+	float:left;
+	margin:.6em;
 }
 
 #footer-wrap{
@@ -242,7 +225,7 @@ h3{
 	font-weight: 400;
 }
 
-#sidebar h3, #bio-wrap h3, #bio-wrap h4{
+#sidebar h3,{
 	margin-bottom:10px;
 	padding-bottom:11px;	
 	font-family: 'Mercury SSm Small Caps A', 'Mercury SSm Small Caps B', georgia, serif;
