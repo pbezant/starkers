@@ -111,11 +111,11 @@ nav ul li{display:inline; margin-left:15px;}
 
 #entry-content {
 	position: relative;
-  margin: .5em;
+  margin: 1%;
   z-index: 1;
   float:left;
-  width:30%;
-  min-width: 150px;
+  max-width:220px;
+  min-width: 180px;
   overflow:hidden;
 }
 

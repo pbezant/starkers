@@ -112,7 +112,7 @@
 }
 
     function custom_excerpt_length( $length ) {
-	return rand(5,25);
+	return rand(5,35);
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 

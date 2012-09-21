@@ -8,23 +8,8 @@
 		$('#content-main').masonry({
 		itemSelector: '.post',
 		 isAnimated: true,
-		// set columnWidth a fraction of the container width
-		columnWidth: function( containerWidth ) {
-		return containerWidth / 3;
-		}
+		 columnWidth: 10,
 		});
 		}); 
-	/*jQuery(document).load(function($) {
-   // put all your jQuery goodness in here.
-			$('#content-main').masonry({
-			  itemSelector: '#entry-content',
-			   isAnimated: true,
-  				columnWidth: function( containerWidth ) {
-   				 return containerWidth / 5;
-  				}
-			});
-
- 	});
-*/
 	</script>
 </html>
