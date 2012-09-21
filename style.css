@@ -7,7 +7,13 @@ Author: Elliot Jay Stocks
 Author URI: http://elliotjaystocks.com
 Tags: starkers, naked, clean, basic
 */
-
+/*
+Positioning
+Display & Box Model
+Color
+Text
+Other
+*/
 
 
 
@@ -43,7 +49,6 @@ body{
 	max-width:1000px;
 	margin:0px auto;
 	padding:0px 20px 50px;
-/*	overflow:hidden;*/
 	
 }
 
@@ -124,19 +129,22 @@ nav ul li{display:inline; margin-left:15px;}
 	max-width:220px;
 	min-width: 180px;
 	margin: 1%;
-	border: 1px solid rgb(204, 204, 204);
-	background: none repeat scroll 0 0 rgb(107, 112, 119);
+	
+	
   
 }
 
-#excerpt p{
+#excerpt{
+	border: 1px solid rgb(204, 204, 204);
 	padding:1em;
+	background: none repeat scroll 0 0 rgb(107, 112, 119);
 	font-size: 1em;
 	line-height: 1.5em;
 	
 }
 
 .post {
+	
 	font-size: 0.8em;
     -moz-perspective: 600px; 
 }
