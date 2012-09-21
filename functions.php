@@ -106,7 +106,7 @@
             'after_title' => '</h2>',  
         ));  
     function custom_excerpt_length( $length ) {
-	return 25;
+	return 20;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
