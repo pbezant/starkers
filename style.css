@@ -7,8 +7,9 @@ Author: Elliot Jay Stocks
 Author URI: http://elliotjaystocks.com
 Tags: starkers, naked, clean, basic
 */
-*{ border:1px solid black;}
-@import "css/reset.css";
+
+
+
 
 body{
 	background-color:#DBD9D4;
@@ -32,8 +33,6 @@ body{
 	min-height:500px;
 	z-index:100;
 }
-
-img{max-width:100%;}
 
 #main{
 	max-width:1000px;
@@ -116,49 +115,69 @@ nav ul li{display:inline; margin-left:15px;}
   z-index: 1;
   float:left;
   width:30%;
-  height: 13em;
-  overflow: hidden;
-  -moz-perspective: 1000;
+  min-width: 150px;
+  overflow:hidden;
 }
 
-
-#f1_card {
-  width: 100%;
-  height: 100%;
-  -moz-transform-style: preserve-3d;
-  -moz-transition: all 1.0s linear;
-}
-#entry-content:hover #f1_card {
-	cursor: pointer;
-	transition-delay: .5s;
-	-moz-transition-delay: .5s; /* Firefox 4 */
-	-webkit-transition-delay: .5s; /* Safari and Chrome */
-	-o-transition-delay: .5s; /* Opera */ 
-	-moz-transform: rotateY(180deg);
-	box-shadow: -5px 5px 5px #aaa;
-}
 #excerpt p{
-	width: 100%;
-	max-height: 100%;
 	font-size: 1em;
 	line-height: 1.5em;
+	padding:1em;
 }
 
-.face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -moz-backface-visibility: hidden;
+.post {
+    -moz-perspective: 600px; 
+    font-size: 0.8em;
+
+
 }
-.face.back {
-  display: block;
-  -moz-transform: rotateY(180deg);
-  -moz-box-sizing: border-box;
-  padding: .55em;
-  color: white;
-  text-align: center;
-  background-color: #aaa;
+.post .front {
+	width:100%;
+	height:100%;
+    -moz-backface-visibility: hidden;
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform-style: preserve-3d;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    background: none repeat scroll 0 0 rgb(107, 112, 119);
+    border: 1px solid rgb(204, 204, 204);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.9);
+    float: none;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    z-index: 900;
 }
+.post:hover .front {
+    -moz-transform: rotateY(180deg);
+    background: none repeat scroll 0 0 rgb(51, 51, 51);
+    border-color: rgb(238, 238, 238);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+    z-index: 900;
+}
+.post .back {
+    -moz-backface-visibility: hidden;
+    -moz-transform: rotateY(-180deg);
+    -moz-transform-style: preserve-3d;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    background: none repeat scroll 0 0 rgb(51, 51, 51);
+    border: 1px solid rgb(204, 204, 204);
+    float: none;
+    height: inherit;
+    left: 0;
+
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    top: 0;
+    width: inherit;
+    z-index: 800;
+}
+.post:hover .back {
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    background: none repeat scroll 0 0 rgb(128, 134, 141);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
 
 #footer-wrap{
 	width:100%;

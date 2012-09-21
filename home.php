@@ -13,23 +13,24 @@ Template Name: Home
 	<?php $archive_query = new WP_Query('showposts=1000');
 		while ($archive_query->have_posts()) : $archive_query->the_post(); ?>
 			<div id="entry-content" <?php post_class(); ?>>
-			<div id="f1_card">
+			<div class="panel">
 				<a href="<?php echo get_permalink(); ?>">
-				<div class="front face">
+				<div id="excerpt" class="back">
+					<?php
+
+					 the_excerpt(); ?>
+				</div>
+				<div class="front">
 				 	
 					<?php if ( has_post_thumbnail() ) {
-						set_post_thumbnail_size( 500, 500, true );
+						set_post_thumbnail_size( 300, 300, true );
 						the_post_thumbnail();
 					}
 					else
 						echo "<h2>".get_the_title()."</h2>"; ?>
 					
 				</div>
-				<div id="excerpt" class="back face center">
-					<?php
-
-					 the_excerpt(); ?>
-				</div>
+				
 				</a>
 			</div>
 			</div>
