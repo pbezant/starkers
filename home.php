@@ -18,15 +18,17 @@ Template Name: Home
 				<div class="front face">
 				 	
 					<?php if ( has_post_thumbnail() ) {
-						//set_post_thumbnail_size( 150, 150, true );
+						set_post_thumbnail_size( 500, 500, true );
 						the_post_thumbnail();
 					}
 					else
 						echo "<h2>".get_the_title()."</h2>"; ?>
 					
 				</div>
-				<div class="back face center">
-					<?php the_excerpt(); ?>
+				<div id="excerpt" class="back face center">
+					<?php
+
+					 the_excerpt(); ?>
 				</div>
 				</a>
 			</div>

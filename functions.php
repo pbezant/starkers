@@ -97,7 +97,7 @@
 		</li>
 		<?php 
 	}
-
+//Get Funcy
     if ( function_exists('register_sidebar') )  
         register_sidebar(array(  
             'before_widget' => '',  
@@ -105,5 +105,10 @@
             'before_title' => '<h2>',  
             'after_title' => '</h2>',  
         ));  
+    function custom_excerpt_length( $length ) {
+	return 25;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
+add_theme_support( 'post-thumbnails' );
    
