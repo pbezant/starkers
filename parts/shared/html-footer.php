@@ -7,7 +7,7 @@
 	 jQuery(function($){
 		$('#content-main').masonry({
 		itemSelector: '.post',
-		 isAnimated: true,
+		 isAnimated: !Modernizr.csstransitions,
 		 columnWidth: 10,
 		});
 		}); 
