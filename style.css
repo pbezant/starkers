@@ -114,11 +114,6 @@ nav ul li{display:inline; margin-left:15px;}
 
 
 #content-main{
-<<<<<<< HEAD
-	overflow: hidden;
-	margin-left:280px;
-=======
->>>>>>> 32106dfb8895510ca4e4cbe69a21ed03467d8f00
 	overflow:hidden;
 	margin-left:280px;
 	margin-bottom:60px;
@@ -126,35 +121,6 @@ nav ul li{display:inline; margin-left:15px;}
 
 #entry-content {
 	position: relative;
-<<<<<<< HEAD
-  margin: .5em;
-  z-index: 1;
-  float:left;
-  width:30%;
-  min-width: 150px;
-  height: 13em;
-  overflow: hidden;
-  -moz-perspective: 1000;
-}
-
-
-#f1_card {
-  width: 100%;
-  height: 100%;
-  -moz-transform-style: preserve-3d;
-  -moz-transition: all 1.0s linear;
-}
-#entry-content:hover #f1_card {
-	cursor: pointer;
-	transition-delay: .5s;
-	-moz-transition-delay: .5s; /* Firefox 4 */
-	-webkit-transition-delay: .5s; /* Safari and Chrome */
-	-o-transition-delay: .5s; /* Opera */ 
-	-moz-transform: rotateY(180deg);
-	box-shadow: -5px 5px 5px #aaa;
-}
-#excerpt p{
-=======
 	float:left;
 	z-index: 1;
 	overflow:hidden;
@@ -167,7 +133,6 @@ nav ul li{display:inline; margin-left:15px;}
 	border: 1px solid rgb(204, 204, 204);
 	padding:1em;
 	background: none repeat scroll 0 0 rgb(107, 112, 119);
->>>>>>> 32106dfb8895510ca4e4cbe69a21ed03467d8f00
 	font-size: 1em;
 	line-height: 1.5em;
 	
