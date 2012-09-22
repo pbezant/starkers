@@ -105,8 +105,18 @@
             'before_title' => '<h2>',  
             'after_title' => '</h2>',  
         ));  
+    function UniqueRandomNumbersWithinRange($min, $max, $quantity) {
+    $numbers = range($min, $max);
+    shuffle($numbers);
+    return array_slice($numbers, 0, $quantity);
+}
+
     function custom_excerpt_length( $length ) {
+<<<<<<< HEAD
 	return 20;
+=======
+	return rand(5,25);
+>>>>>>> 32106dfb8895510ca4e4cbe69a21ed03467d8f00
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
