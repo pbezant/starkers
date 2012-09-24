@@ -8,7 +8,7 @@
 
 
 @media screen and (max-width:900px){
-	#bio-top p.intro{
+	p.intro{
 		font-size:36px;
 		line-height:42px;
 		padding-bottom:15px;
@@ -26,23 +26,10 @@
 /*-----------------------------------------------max-width 800-------------------------------------------------------*/
 
 @media screen and (max-width:800px){
-	#sidebar p{display:none;}
 	#sidebar{width:150px;}
-	#sidebar-about{width:150px;}
-	#sidebar-about p{display:block;text-align:center;}
-	#sidebar-about{width:100%;position:relative;margin-top:30px;text-align:center;}
-	#bio-wrap h3{text-align:center;}
-	#sidebar-about ul {display:block;}
 	#content-main{margin-left:150px;padding-left:20px;}
-	#content-main.about{margin-right:0px;padding-bottom:0px;margin-bottom:0px;padding-left:0px;}
-	#sidebar-about{margin-left:0px;}
-	img.bio-image, img.bio-image.bw, img.bio-image.white{display:none;}
-	#sidebar p.photo-credit{display:none;}
-	#content-main.resources{padding-left:0px;}
 	h1.logo{display:none;}
-	.work-info{width:230px;}
 	#slides{margin-left:250px;}
-	#bio-top p.intro{margin-bottom:15px;}
 	
 	#slides img{margin-bottom:2px;}
 	#slides{margin-left:0px;padding-left:0px;padding-bottom:0px;}
@@ -54,12 +41,6 @@
 		text-align:center;
 	}
 
-	#sidebar.work-info{width:100%;text-align:center;padding-bottom:5px;position:relative;top:0;margin-top:15px;}
-	#sidebar.work-info p{display:block; text-align:left;}
-	#content-main.FAQ, #content-main.thoughts{padding-left:0px;}
-	#content-main.FAQ, #content-main.thoughts{margin-left:0px;padding-left:0px;margin-bottom:20px;margin-top:0px;padding-bottom:0px;}
-	#sidebar.thoughts{display:none;}
-	#content-main .entry-content.side-project {	margin-bottom: 0px;}
 	#main{margin-top:50px;}
 	#footer-nav {
 		display:none;
@@ -72,28 +53,15 @@
 @media screen and (max-width:550px){
 	/*#header{margin:0px auto 0px;}*/
 	#mobile-nav{display: block;}
-	#sidebar p{display:none;}
 	#sidebar ul {display:none;}
-	#sidebar.work-info ul {display:block;}
 	#sidebar{width:100%;text-align:center;padding-bottom:5px;}
 	#sidebar{position:relative;top:0;margin-top:25px;}
-	#sidebar-about ul li{display:block;margin-left:0px;margin-right:0px;}
-	#bio-top p.intro{
-		font-size:23px;
-		line-height:32px;
-		padding-bottom:15px;
-		font-weight:400;
-	}
 	
 	#content-main p.intro{
 		font-size:23px;
 		line-height:32px;
 		font-weight:400;
 		text-indent:0px;
-	}
-	
-	#mom-block{
-		margin-bottom:30px;
 	}
 	
 	h1.entry-title, h1.page-title, #content-main.resources h1, header.entry-header h1.entry-title{
@@ -110,8 +78,6 @@
 	}
 	
 	img.ornament{display:none;}
-	ul.credits{margin-left:0px;}
-	#sidebar ul.credits li{text-indent:0px;padding-left:0px;}
 	ul.bullet li strong{font-size:15px;line-height:22px;}
 	ul.bullet{font-weight:400px;font-size:12px;line-height:17px;}
 	ol letter p{font-size:12px;}
@@ -139,24 +105,6 @@
 		line-height:22px;
 	}
 	
-	.dropcap{
-		font-family: 'Mercury SSm A', 'Mercury SSm B';
-		font-weight: 300;
-		font-size: 46px;
-		line-height: 55px;
-		background: url("http://www.jessica.is.php5-23.dfw1-2.websitetestlink.com/wp-content/themes/Starkers/images/orange-frame.png") no-repeat;
-		background-size: 100%;
-		width: 56px;
-		height: 56px;
-		top: 5px;
-	}
-	
-	.run-in{
-		letter-spacing: 0px;
-		margin-right: 0px;
-		font-family: 'Mercury SSm A', 'Mercury SSm B';
-		font-weight:300;
-	}
 
 	#content-main.resources h3{
 		margin-top:20px;
@@ -215,7 +163,7 @@
 	h1.search-title{
 		text-align:center;
 	}
-	#teengirl-button{display:none;}
+
 	div.resource-list{
 		margin-left:0%;
 		width:100%;
@@ -249,7 +197,6 @@
 	#footer-wrap{display:none;}
 	#page-wrap{margin:0 10px 0 10px;}
 	nav {display:none;}
-	#teengirl-nav{display:none;}
  	#mobile-button{display:block;}
 	article.thumb-article:hover{
 		-webkit-transform: scale(1);
@@ -265,18 +212,7 @@
 	font-size: 12px;
 	line-height: 19px;
 }
-#content-main .letter strong {
-font-size: 12px;
-padding-bottom: 8px;
-margin-bottom:8px;
-margin-top: 20px;
-display: block;
-}
-#sidebar h1.hooray{
-	margin-left:0px;
-}
-#bio-top img{display:none;}
-.photo-credit{display:none;}
+
 #main{margin-top:0px;}
 #sidebar.work{display:none;}
 h1.page-title.mobile{display:block;}
@@ -293,9 +229,6 @@ a.mobile-menu{margin-right:5px;}
 	display: block;
 	position:relative;
 }
-.lecture-date-wrap{
-	text-align:center;
-}
 
 }/*/mediaquery*/
 
@@ -307,13 +240,7 @@ a.mobile-menu{margin-right:5px;}
 	#header{padding: 0px 10px 25px;}
 	nav ul li{margin-left:10px;}
 	#page-wrap{margin:0px; padding:10px 20px;}
-	.address{text-align:center; position:relative; width:100%;top:0px;}
-	#getintouch ul li{text-align:center;}
 	#toggleText{margin:0 auto;}
-	#content-main #getintouch p.faq-hidden{padding-left:0px; text-align:center;}
-	#content-main #getintouch p.faq-hidden.question{text-align:center;}
-	#content-main.thoughts{width:100%;}
-	#bio-wrap .address h4{margin-top:20px;}
 	#page-wrap{margin: 0px;padding: 10px 30px;}
 	#main{padding:0px 5px;}
 	
@@ -325,8 +252,6 @@ a.mobile-menu{margin-right:5px;}
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
-	#teengirl-button{display:none;}
-	#teengirl-nav{display:none;}
 	
 /* Styles */
 }
@@ -336,8 +261,6 @@ and (orientation : landscape) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
-	#teengirl-button{display:none;}
-	#teengirl-nav{display:none;}
 		
 /* Styles */
 }

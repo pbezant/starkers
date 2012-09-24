@@ -64,10 +64,8 @@ jQuery(document).ready(function($) {
 		arrowPos = ((windowWidth - $('#main').width()) * .5) - 50;
 		
 		if (windowWidth < 550) {
-			$('#sidebar.work-info, #sidebar.thoughts').removeClass('follow');
-		} else if (windowWidth < 800) {
-			$('#sidebar.work-info').removeClass('follow');
-			}
+			$('#sidebar').removeClass('follow');
+		} 
 		if (windowHeight < (sidebarHeight + 150)) {
 			$('#sidebar').removeClass('follow');
 			}
