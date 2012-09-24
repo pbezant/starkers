@@ -1,4 +1,7 @@
 <div id="page-wrap">
+<div id="mobile-button">
+	<a class="mobile-menu" href="#">Menu</a>
+</div>	
 <header>
 	<h1 id="logo"><a href="/"><?php bloginfo( 'name' ); ?></a></h1>
 	<h2><?php bloginfo( 'description' ); ?></h2>
