@@ -98,10 +98,12 @@ nav ul li{display:inline; margin-left:15px;}
 #showcase-nav-right{
 	float:right;
 }
+
 article h2{
 	clear:both;
 	text-align: center;
 }
+
 #showcase-nav-right.fixed{
 	position:fixed;
 	margin-top:30px;
