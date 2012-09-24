@@ -92,7 +92,16 @@ nav ul li{display:inline; margin-left:15px;}
 	margin-top:30px;
 	
 }
-
+#showcase-nav{
+	float:left;
+}
+#showcase-nav-right{
+	float:right;
+}
+article h2{
+	clear:both;
+	text-align: center;
+}
 #showcase-nav-right.fixed{
 	position:fixed;
 	margin-top:30px;
@@ -127,7 +136,7 @@ nav ul li{display:inline; margin-left:15px;}
 	float:left;
 	z-index: 1;
 	overflow:hidden;
-	max-width:220px;
+	width:30%;
 	min-width: 120px;
 	margin: 1%;
 }

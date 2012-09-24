@@ -5,9 +5,6 @@ Template Name: Home
 ?>
 
 <?php get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header', 'sidebar') ); ?>
-<style>
-
-</style>
 
 <div id="content-main">
 	<?php $archive_query = new WP_Query('showposts=1000');
@@ -20,6 +17,7 @@ Template Name: Home
 
 					 the_excerpt(); ?>
 				</div>
+				</a>
 				<div class="front">
 				 	
 					<?php if ( has_post_thumbnail() ) {
@@ -31,7 +29,7 @@ Template Name: Home
 					
 				</div>
 				
-				</a>
+				
 			</div>
 			</div>
 		<?php endwhile; ?>

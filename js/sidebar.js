@@ -63,13 +63,13 @@ jQuery(document).ready(function($) {
 
 		arrowPos = ((windowWidth - $('#main').width()) * .5) - 50;
 		
-		if (windowWidth < 550) {
+		if (windowWidth < 600) {
 			$('#sidebar').removeClass('follow');
 		} 
 		if (windowHeight < (sidebarHeight + 150)) {
 			$('#sidebar').removeClass('follow');
 			}
-		if (windowWidth > 550) {
+		if (windowWidth > 600) {
 			$('#mobile-nav').hide();
 			}
 		};
