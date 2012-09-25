@@ -147,11 +147,9 @@ article h2{
 }
 
 #entry-content.hidden{
-	visibility:hidden;
-	display:none;
-	width:0 !important;
-	height:0 !important;
-
+	display:none ;
+	width:0px !important;
+	height:0px !important;
 }
 /**** Transitions ****/
 
