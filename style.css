@@ -121,9 +121,7 @@ article h2{
 	font-size: 14px;
 	
 }
-#cat-nav h3{
-	cursor: pointer;
-}
+
 #cat-nav ul li{
 	width:100%;
 	position: relative;
