@@ -9,6 +9,24 @@
 	<div class="post-text">
 		<?php the_content(); ?>
 	</div>
+	<?php if (is_front_page()) : ?>
+		<nav id="cat-nav">
+		<a><h3>Categories</h3></a>
+		<ul>
+			<li id="posts"><a >Everything</a></li>
+		<?php
+			$args=array(
+			  'orderby' => 'name',
+			  'order' => 'ASC'
+			  );
+			$categories=get_categories($args);
+			foreach($categories as $category) { 
+			    echo '<li id="'. $category->category_nicename . '" ><a >' . $category->name.'</a> </li>';
+			} 
+		?>
+		</ul>
+		</nav>
+	<?php endif; ?>
 <?php endwhile; endif; ?>
 
 <?php if ( !function_exists('dynamic_sidebar')  || !dynamic_sidebar() ) : ?>  

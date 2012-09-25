@@ -6,10 +6,25 @@
 	<script>
 	jQuery(function($){
 		$('#content-main').masonry({
-			itemSelector: '.post',
+			itemSelector: '#entry-content',
 			isAnimated: !Modernizr.csstransitions,
 			columnWidth: 10,
 		});
-	}); 
+		$('#cat-nav h3').click(function(){
+			$('#cat-nav ul').slideToggle();
+		});
+
+		$('#cat-nav ul li').click(function(){
+			$('#cat-nav ul li').removeClass('active');
+			$(this).addClass('active');
+
+			var cat = $(this).attr('id');
+			$('#entry-content.category-'+ cat +'').show();
+			$('#entry-content:not(.category-'+ cat +')').hide();
+			//$('#content-main').masonry('layout', $('#entry-content.category-'+ cat +''), true).masonry('reload');
+			
+		});
+
+	});
 	</script>
 </html>
