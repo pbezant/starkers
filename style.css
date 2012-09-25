@@ -145,6 +145,14 @@ article h2{
 	min-width: 120px;
 	margin: 1%;
 }
+
+#entry-content.hidden{
+	visibility:hidden;
+	display:none;
+	width:0 !important;
+	height:0 !important;
+
+}
 /**** Transitions ****/
 
 .masonry,

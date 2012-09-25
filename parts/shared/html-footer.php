@@ -19,8 +19,9 @@
 			$(this).addClass('active');
 
 			var cat = $(this).attr('id');
-			$('#entry-content.category-'+ cat +'').show();
-			$('#entry-content:not(.category-'+ cat +')').hide();
+			$('#entry-content.category-'+ cat +'').removeClass('hidden');
+			$('#entry-content:not(.category-'+ cat +')').addClass('hidden');
+			$('#content-main').masonry('reload');
 			//$('#content-main').masonry('layout', $('#entry-content.category-'+ cat +''), true).masonry('reload');
 			
 		});
