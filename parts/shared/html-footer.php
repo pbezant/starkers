@@ -22,6 +22,7 @@
 			$('#entry-content.category-'+ cat +'').removeClass('hidden');
 			$('#entry-content:not(.category-'+ cat +')').addClass('hidden');
 			$('#content-main').masonry('reload');
+
 			//$('#content-main').masonry('layout', $('#entry-content.category-'+ cat +''), true).masonry('reload');
 			
 		});
