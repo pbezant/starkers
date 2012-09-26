@@ -13,7 +13,7 @@
 		<nav id="cat-nav">
 		<a><h3>Categories</h3></a>
 		<ul>
-			<li id="posts"><a >Everything</a></li>
+			<li><a data-filter="*">Everything</a></li>
 		<?php
 			$args=array(
 			  'orderby' => 'name',
@@ -21,7 +21,7 @@
 			  );
 			$categories=get_categories($args);
 			foreach($categories as $category) { 
-			    echo '<li id="'. $category->category_nicename . '" ><a >' . $category->name.'</a> </li>';
+			    echo '<li><a data-filter=".category-'. $category->category_nicename .'">' . $category->name.'</a> </li>';
 			} 
 		?>
 		</ul>
