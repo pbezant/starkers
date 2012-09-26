@@ -148,6 +148,13 @@ article h2{
 	margin-bottom:60px;
 }
 
+#content-main.blog{
+	margin-left:7%;
+	margin-right:7%;
+}
+
+
+
 #entry-content {
 	position: relative;
 	float:left;

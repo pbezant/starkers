@@ -23,8 +23,11 @@
 	if($format == 'gallery'){
 		get_template_part('sidebar');
 	}
+	else{
+		$format = 'blog';
+	}
 ?>
-<div id="content-main">
+<div id="content-main" class="<?php echo $format ?>">
 
 	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
