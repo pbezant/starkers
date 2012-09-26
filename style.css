@@ -44,6 +44,8 @@ body{
 	display:none;
 }
 
+ul li{display:inline; margin-left:15px; list-style: none;}
+
 #main{
 	position:relative;
 	max-width:1000px;
@@ -72,25 +74,6 @@ header{
 	width:70%;
 }
 
-
-ul li{display:inline; margin-left:15px; list-style: none;}
-
-#sidebar{
-	float:left;
-	font-size:12px;
-	line-height:19px;
-	width:270px;
-	font-weight: 400;
-	padding-bottom:50px;
-	z-index:1;
-}
-
-#sidebar.fixed{
-	position:fixed;
-	top:0px;
-	margin-top:30px;
-	
-}
 #showcase-nav{
 	float:left;
 }
@@ -105,15 +88,42 @@ article h2{
 
 #showcase-nav-right.fixed{
 	position:fixed;
-	margin-top:30px;
+	top:3em;
 }
 
 #showcase-nav.fixed{
 	position:fixed;
-	margin-top:30px;
+	top:3em;
 }
 
+
+#sidebar{
+	z-index:1;
+	width:270px;
+	clear:left;
+	float:left;
+	padding-bottom:50px;
+	margin-top:2em;
+	margin-left:1em;
+	font-size:12px;
+	line-height:19px;
+	
+	font-weight: 400;
+	
+}
+
+
+#sidebar.fixed{
+	position:fixed;
+	top:4em;
+}
+
+
 #sidebar p{margin-bottom:25px;}
+
+.post-text img{
+	display:none;
+}
 
 #sidebar ul li{
 	margin-bottom: 7px;	

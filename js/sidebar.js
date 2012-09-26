@@ -61,7 +61,7 @@ jQuery(document).ready(function($) {
 	function followSwitch() {
 		$('#sidebar, #showcase-nav, #showcase-nav-right').addClass('follow');
 
-		arrowPos = ((windowWidth - $('#main').width()) * .5) - 50;
+		arrowPos = ((windowWidth - $('#main').width()) * .5) - 35;
 		
 		if (windowWidth < 600) {
 			$('#sidebar').removeClass('follow');
