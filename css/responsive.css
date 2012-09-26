@@ -14,7 +14,7 @@
 		padding-bottom:15px;
 		font-weight:300;		
 	}
-
+	#entry-content{min-width: 75px; width:44%;}
 }/*/mediaquery*/
 
 
@@ -36,7 +36,7 @@
 	}
 
 	#main{margin-top:50px;}
-	#entry-content{min-width: 50px; width:45%;}
+	
 	#footer-nav {
 		display:none;
 	}
@@ -152,10 +152,6 @@
 	#content-main.resources ul li{text-align:center;}
 	#content-main.resources h3{text-align:center;}
 	
-
-	
-
-
 	#switchform{display:none;}
 	
 	ol .entry-content h3{

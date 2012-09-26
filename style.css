@@ -32,7 +32,7 @@ body{
 	overflow:hidden;
 	min-height:500px;
 	margin:20px;
-	padding:0px 37px;
+	padding:0px 3%;
 	background-color:#fff;
 	-moz-box-shadow: 0px 0px 5px #a2a2a2;
 	-webkit-box-shadow: 0px 0px 5px #a2a2a2;
@@ -53,6 +53,7 @@ body{
 }
 
 header{
+	overflow: hidden;
 	position:relative;
 	z-index:100;
 	max-width:1000px;
@@ -132,7 +133,7 @@ article h2{
 
 #content-main{
 	overflow:hidden;
-	height:80%;
+	min-height:1000px;
 	margin-left:280px;
 	margin-bottom:60px;
 }
@@ -147,11 +148,6 @@ article h2{
 	margin: 1%;
 }
 
-#entry-content.hidden{
-	display:none ;
-	width:0px !important;
-	height:0px !important;
-}
 /**** Isotope Filtering ****/
 
 .isotope-item {

@@ -66,7 +66,7 @@ jQuery(document).ready(function($) {
 		if (windowWidth < 600) {
 			$('#sidebar').removeClass('follow');
 		} 
-		if (windowHeight < (sidebarHeight + 150)) {
+		if (windowHeight < (sidebarHeight + 100)) {
 			$('#sidebar').removeClass('follow');
 			}
 		if (windowWidth > 600) {
