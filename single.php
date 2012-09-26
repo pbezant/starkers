@@ -18,6 +18,7 @@
 <div id="showcase-nav-right" class="showcase-nav next" >
 	<?php next_post_link(); ?> 
 </div>
+
 <?php 
 	$format = get_post_format();
 	if($format == 'gallery'){
