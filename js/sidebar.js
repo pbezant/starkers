@@ -8,7 +8,6 @@ jQuery(document).ready(function($) {
 	var sidebarHeight = $('#sidebar').height();
 	var arrowPos = ((windowWidth - $('#main').width()) * .5) - 70;
 	$('#mobile-nav').slideToggle(0);
-	$('#thoughts-categories').find('.cat-posts').slideToggle(0);
 	followSwitch();
 	iframeResize();
 	
@@ -32,9 +31,6 @@ jQuery(document).ready(function($) {
 	};
 	
 	// Bind event handlers
-	$('#thoughts-categories').find('a').click(function() {
-		$(event.target).next('.cat-posts').slideToggle(500);
-		});
 	$('#mobile-button').click(function() {
 		$('#mobile-nav').slideToggle(500);
 		});
