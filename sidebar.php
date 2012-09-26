@@ -2,6 +2,14 @@
 <?php 
 	//This sidebar will show the content of the current page
 ?>
+<?php
+function remove_images( $content ) {
+   $postOutput = preg_replace('/<img[^>]+./','', $content);
+   return $postOutput;
+}
+add_filter( 'the_content', 'remove_images', 100 );
+?>
+
 <div id="sidebar" class="<?php the_title(); ?>">
 
 <?php if (have_posts()) : while (have_posts()) : the_post();?>
@@ -31,4 +39,6 @@
 
 <?php if ( !function_exists('dynamic_sidebar')  || !dynamic_sidebar() ) : ?>  
 <?php endif; ?>  
-</div>  <!-- #sidebar -->
+</div>  
+<?php remove_filter( 'the_content', 'remove_images' ); ?>
+<!-- #sidebar -->
