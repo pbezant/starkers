@@ -28,7 +28,7 @@
 
 <article>
 	<?php
-    $gallery_shortcode = '[gallery id="' . intval( $post->post_parent ) . '"]';
+    $gallery_shortcode = '[gallery id="' . intval( $post->post_parent ) . '" link="file"]';
     print apply_filters( 'the_content', $gallery_shortcode );
  ?>
 	
