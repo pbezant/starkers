@@ -48,9 +48,10 @@
 @media screen and (max-width:600px){
 	/*#header{margin:0px auto 0px;}*/
 	#mobile-nav{display: block;}
+	#main-nav{display:none;}
 	#sidebar{width:100%;text-align:center;padding-bottom:5px;}
 	#sidebar{position:relative;top:0;margin-top:25px;}
-	#sidebar ul li{margin-left:-3em;}
+	#sidebar ul li{margin-left: -1.5em;}
 	
 	#content-main p.intro{
 		font-size:23px;
@@ -116,10 +117,10 @@
 	img.tiny-logo{top:-40px;width:30px;}
 	#page-wrap{margin:0 10px 15px 10px;padding:10px 20px;}
 	nav{
-		text-align:right;
 		margin-bottom:35px;
 		margin-top:5px;
 	}
+	#cat-nav ul {display:none;}
 	.addendum{
 		font-size:10px;
 		line-height:16px;
@@ -149,8 +150,6 @@
 	}
 
 	div.resource-list:first-child{width:100%;}
-	#content-main.resources ul li{text-align:center;}
-	#content-main.resources h3{text-align:center;}
 	
 	#switchform{display:none;}
 	
@@ -162,7 +161,7 @@
 	.entry-content{margin-bottom:30px;}
 	#footer-wrap{display:none;}
 	#page-wrap{margin:0 10px 0 10px;}
-	nav {display:none;}
+	
  	#mobile-button{display:block;}
 	article.thumb-article:hover{
 		-webkit-transform: scale(1);
@@ -171,12 +170,7 @@
 	#content-main.resources h1#top-resource-head{margin-bottom:0px;}
 	#sidebar{padding-top:0px;margin-top:0px;}
 	#arrow-info{display:none;}
-	a.pin-it-button{left:44%;}
-	ol .letter p {
-	font-family: 'Whitney SSm A', 'Whitney SSm B';
-	font-weight: 400;
-	font-size: 12px;
-	line-height: 19px;
+	
 }
 
 #main{margin-top:0px;}
