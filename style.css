@@ -42,11 +42,10 @@ body{
 	display:none;
 }
 
-ul li{display:inline; margin-left:15px; list-style: none;}
+ul li{display:inline; margin-left:-5%; list-style: none;}
 
 #main{
 	position:relative;
-	overflow:hidden;
 	max-width:1000px;
 	min-height:500px;
 	margin:0px auto;
@@ -72,6 +71,9 @@ header{
 	font-size: 14px;
 	font-weight: 400;
 	width:70%;
+}
+#main-nav li{
+	margin:1em;
 }
 
 #showcase-nav{
@@ -148,11 +150,13 @@ article h2{
 	min-height:1000px;
 	margin-left:280px;
 	margin-bottom:60px;
+	overflow:hidden;
 }
 
 #content-main.blog{
 	margin:0 7%;
 	padding:0;
+	overflow:visible;
 
 }
 
