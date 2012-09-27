@@ -16,7 +16,6 @@ Other
 */
 
 body{
-	width:100%;
 	background-color:#DBD9D4;
 	font-size:17px;
 	line-height:29px;
@@ -30,9 +29,8 @@ body{
 	position:relative;
 	z-index:100;
 	overflow:hidden;
-	min-height:500px;
 	margin:20px;
-	padding:0px 3%;
+	padding:0px 37px;
 	background-color:#fff;
 	-moz-box-shadow: 0px 0px 5px #a2a2a2;
 	-webkit-box-shadow: 0px 0px 5px #a2a2a2;
@@ -48,9 +46,11 @@ ul li{display:inline; margin-left:15px; list-style: none;}
 
 #main{
 	position:relative;
+	overflow:hidden;
 	max-width:1000px;
+	min-height:500px;
 	margin:0px auto;
-	padding:0px 20px 50px;
+	padding:0px 5% 50px;
 	
 }
 
@@ -76,9 +76,13 @@ header{
 
 #showcase-nav{
 	float:left;
+	position:relative;
+	left:-35px;
 }
 #showcase-nav-right{
 	float:right;
+	position:relative;
+	right:-35px;
 }
 
 article h2{
@@ -88,18 +92,18 @@ article h2{
 
 #showcase-nav-right.fixed{
 	position:fixed;
-	top:3em;
+	top:1em;
 }
 
 #showcase-nav.fixed{
 	position:fixed;
-	top:3em;
+	top:1em;
 }
 
 
 #sidebar{
 	z-index:1;
-	width:270px;
+	width:260px;
 	clear:left;
 	float:left;
 	padding-bottom:50px;
@@ -115,7 +119,7 @@ article h2{
 
 #sidebar.fixed{
 	position:fixed;
-	top:6em;
+	top:2em;
 }
 
 
@@ -142,15 +146,15 @@ article h2{
 
 
 #content-main{
-	overflow:hidden;
 	min-height:1000px;
 	margin-left:280px;
 	margin-bottom:60px;
 }
 
 #content-main.blog{
-	margin-left:7%;
-	margin-right:7%;
+	margin:0 7%;
+	padding:0;
+
 }
 
 

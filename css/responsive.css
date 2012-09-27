@@ -24,10 +24,6 @@
 	#sidebar{width:150px;}
 	#content-main{margin-left:150px;padding-left:20px;}
 	h1.logo{display:none;}
-	#slides{margin-left:250px;}
-	
-	#slides img{margin-bottom:2px;}
-	#slides{margin-left:0px;padding-left:0px;padding-bottom:0px;}
 	header.entry-header.mobile{display:block;}
 	header.entry-header.browser{display:none;}
 	h1.entry-title{
@@ -171,12 +167,12 @@
 	#sidebar{padding-top:0px;margin-top:0px;}
 	#arrow-info{display:none;}
 	
-}
+
 
 #main{margin-top:0px;}
 .tiny-logo.mobile{display:block;}
 #main-logo.tiny-logo{display:none;}
-#page-wrap{margin: 0px 10px;padding: 10px 30px;}
+#page-wrap{margin: 0px 10px; padding: 10px 30px;}
 #main{padding:0px 5px;}
 #header{padding:0px 5px 25px;}
 img.tiny-logo {left:5px;}

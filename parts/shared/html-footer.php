@@ -9,7 +9,7 @@
 		$('#cat-nav h3').click(function(){
 			$('#cat-nav ul').slideToggle();
 		});
-		
+		<?php if (is_front_page()) : ?>
 		var $container = $('#content-main');
 		$container.isotope({
 	  		itemSelector : '#entry-content',
@@ -24,6 +24,7 @@
 			$container.isotope({ filter: selector });
 			return false;
 		});
+		<?php endif; ?>
 	});
 	</script>
 </html>
