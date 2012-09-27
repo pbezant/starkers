@@ -14,7 +14,7 @@
 		padding-bottom:15px;
 		font-weight:300;		
 	}
-	#entry-content{min-width: 75px; width:44%;}
+	#entry-content{min-width: 75px; width:43%;}
 }/*/mediaquery*/
 
 
@@ -190,7 +190,7 @@ a.mobile-menu{margin-right:5px;}
 /*-----------------------------------------------max-width 400-------------------------------------------------------*/
 
 @media screen and (max-width:480px){
-	#main{padding: 0px 10px 20px;}
+	/* #main{padding: 0px 10px 20px;} */
 	#header{padding: 0px 10px 25px;}
 	nav ul li{margin-left:10px;}
 	#page-wrap{margin:0px; padding:10px 20px;}
