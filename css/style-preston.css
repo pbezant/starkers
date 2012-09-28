@@ -1,0 +1,39 @@
+/* 
+	base color scheme: http://colorschemedesigner.com/#2Q42b--rrw0w0
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Henny+Penny);
+html{
+	font-family:serif;
+}
+
+body{
+	background-color: #00438F;
+}
+#page-wrap{
+   
+}
+h1,h2,h3,h4{
+	font-family: 'Henny Penny', cursive;
+	text-decoration:none;
+	font-weight:600;
+}
+
+
+header h1 a{
+	color:#00AC0B;
+}
+
+nav li a{
+	
+	color: #DB8400;
+}
+#content-main{
+}
+
+#sidebar h3{
+	
+ 
+}
+
+
