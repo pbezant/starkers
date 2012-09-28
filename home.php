@@ -9,15 +9,15 @@ Template Name: Home
 <div id="content-main">
 	<?php $archive_query = new WP_Query('showposts=1000');
 		while ($archive_query->have_posts()) : $archive_query->the_post(); ?>
-			<div id="entry-content" <?php post_class(); ?>>
-			<div class="panel">
-				<a href="<?php echo get_permalink(); ?>">
+			<div id="entry-content" <?php post_class('panel'); ?>>
+				
 				<div id="excerpt" class="back">
-					<?php
-
-					 the_excerpt(); ?>
+					<a href="<?php echo get_permalink(); ?>">
+					<?php the_excerpt(); ?>
+					</a>
 				</div>
-				</a>
+				
+
 				<div class="front">
 				 	
 					<?php if ( has_post_thumbnail() ) {
@@ -28,9 +28,6 @@ Template Name: Home
 						echo "<h2>".get_the_title()."</h2>"; ?>
 					
 				</div>
-				
-				
-			</div>
 			</div>
 		<?php endwhile; ?>
 
