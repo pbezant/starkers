@@ -9,6 +9,11 @@
 		$('#cat-nav h3').click(function(){
 			$('#cat-nav ul').slideToggle();
 		});
+		$('.panel').click(function(){
+			$(this).addClass('flip');
+			setTimeout(function(){jQuery('.panel').removeClass('flip');}, 3000);
+		});
+		
 		<?php if (is_front_page()) : ?>
 		var $container = $('#content-main');
 		$container.isotope({
