@@ -5,8 +5,20 @@ html{
 	font-family:serif;
 }
 
-body, #page-wrap{
-   background-color: #000099;
+body{
+	background-image:url('../images/background.jpg');
+	background-attachment: fixed;
+	background-repeat: none;
+}
+header, #sidebar,footer{
+	margin:.5em;
+}
+header, #sidebar, #content-main, footer{
+	border:1px solid black;
+	-moz-border-radius: 10px;
+ 	border-radius: 10px;
+ 	-moz-box-shadow: 0px 0 10px 5px #888;
+	box-shadow: 0px 0 10px 5px #888;
 }
 h1,h2,h3,h4{
 	font-family: 'Henny Penny', cursive;
@@ -16,37 +28,14 @@ h1,h2,h3,h4{
 	
 }
 header{
-	border:solid black;
-	border-width: 1px 1px 0px 1px;
 	background-color: #ffbf00;
- 	-moz-border-radius: 15px 15px 15px 15px;
- 	border-radius: 15px 15px 15px 15px;
- 	-moz-box-shadow: 0px 0 5px 10px #888;
-	box-shadow: 0px 0 10px 5px #888;
+ 	
 }
 
 #content-main{
 	background-color: #000099;
-	border: 1px solid black;
- 	-moz-border-radius: 15px;
- 	border-radius: 15px;
- 	-moz-box-shadow: 0 0 5px 5px #888;
-	box-shadow: 0 0 5px 5px #888;
-	color:#cfcfcf;
 }
 
 #sidebar{
 	background-color:#066300;
-	border:1px solid black;
-
-	-moz-border-radius: 15px 0px 0px 15px;
- 	border-radius: 15px 0px 0px 15px;
- 	-moz-box-shadow: -5px 0 5px 0px #888;
-	box-shadow: -5px 0px  5px 0px #888;
- 
 }
-.outerglow{
-	-moz-box-shadow: 0 0 5px 5px #888;
-	box-shadow: 0 0 5px 5px #888;
-}
-

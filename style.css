@@ -30,15 +30,8 @@ body{
 	z-index:100;
 	overflow:hidden;
 	max-width:1500px;
-	margin:20px auto;
-
+	margin:0px auto;
 	padding:0px 1em;
-	background-color:#fff;
-/*	
-	-moz-box-shadow: 0px 0px 5px #a2a2a2;
-	-webkit-box-shadow: 0px 0px 5px #a2a2a2;
-	box-shadow: 0px 0px 5px #a2a2a2;
-*/
 }
 
 #mobile-button{
@@ -53,7 +46,7 @@ ul li{display:inline; margin-left:-5%; list-style: none;}
 	
 	min-height:500px;
 	margin:0px auto;
-	padding:0px 5% 50px;
+	padding:0px 5%;
 	
 }
 
@@ -63,7 +56,7 @@ header{
 	z-index:100;
 
 	margin:0px auto;
-	padding:0px;
+	padding:.5em;
 }
 
 #main-nav{
@@ -109,7 +102,7 @@ article h2{
 
 #sidebar{
 	z-index:1;
-	width:260px;
+	width:240px;
 	clear:left;
 	float:left;
 	padding:1em;
@@ -172,7 +165,7 @@ article h2{
 	float:left;
 	z-index: 1;
 	overflow:hidden;
-	width:25%;
+	width:29%;
 	min-width: 120px;
 	margin: 1%;
 }

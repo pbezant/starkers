@@ -24,12 +24,12 @@ add_filter( 'the_content', 'remove_images', 100 );
 			<li><a data-filter="*">Everything</a></li>
 		<?php
 			$args=array(
-			  'orderby' => 'name',
+			  'orderby' => 'date',
 			  'order' => 'ASC'
 			  );
 			$categories=get_categories($args);
 			foreach($categories as $category) { 
-			    echo '<li><a data-filter=".category-'. $category->category_nicename .'">' . $category->name.'</a> </li>';
+			    echo '<li><a href="#" data-filter=".category-'. $category->category_nicename .'">' . $category->name.'</a> </li>';
 			} 
 		?>
 		</ul>
