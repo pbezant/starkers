@@ -57,7 +57,7 @@ jQuery(document).ready(function($) {
 	function followSwitch() {
 		$('#sidebar, #showcase-nav, #showcase-nav-right').addClass('follow');
 
-		arrowPos = ((windowWidth - $('#main').width()) * .5) - 35;
+		arrowPos = ((windowWidth - $('#main').width()) * .5) - 50;
 		if (windowWidth < 600) {
 			$('#sidebar').removeClass('follow');
 		} 
@@ -77,8 +77,8 @@ jQuery(document).ready(function($) {
 			$('#showcase-nav-right').css('right', arrowPos);
 		} else {
 			$('.follow').removeClass('fixed');
-			$('#showcase-nav').css('left', -35);
-			$('#showcase-nav-right').css('right', -35);
+			$('#showcase-nav').css('left', -50);
+			$('#showcase-nav-right').css('right', -50);
 			}
 		};
 	function iOSAnimate() {

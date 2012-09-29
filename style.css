@@ -54,7 +54,6 @@ header{
 	overflow: hidden;
 	position:relative;
 	z-index:100;
-
 	margin:0px auto;
 	padding:.5em;
 }
@@ -76,12 +75,13 @@ header{
 #showcase-nav{
 	float:left;
 	position:relative;
-	left:-35px;
+	left:-50px;
 }
 #showcase-nav-right{
 	float:right;
 	position:relative;
-	right:-35px;
+	right:-50px;
+	display:inline;
 }
 
 article h2{
@@ -146,8 +146,8 @@ article h2{
 #content-main{
 	min-height:1000px;
 	margin-left:285px;
+	margin-right: 2em;
 	margin-bottom:60px;
-	overflow:hidden;
 	padding:.5em;
 }
 
