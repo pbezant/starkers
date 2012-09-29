@@ -12,11 +12,11 @@
 <?php get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header') );?>
 
 <div id="showcase-nav" class="showcase-nav previous">
-	<?php previous_post_link(); ?>
+	<?php previous_post_link('%link', '<<'); ?>
 </div>
 
 <div id="showcase-nav-right" class="showcase-nav next" >
-	<?php next_post_link(); ?> 
+	<?php next_post_link('%link', '>>'); ?> 
 </div>
 
 <?php 

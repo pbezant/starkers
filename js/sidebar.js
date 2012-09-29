@@ -77,8 +77,8 @@ jQuery(document).ready(function($) {
 			$('#showcase-nav-right').css('right', arrowPos);
 		} else {
 			$('.follow').removeClass('fixed');
-			$('#showcase-nav').css('left', -50);
-			$('#showcase-nav-right').css('right', -50);
+			$('#showcase-nav').css('left', -10);
+			$('#showcase-nav-right').css('right', -10);
 			}
 		};
 	function iOSAnimate() {

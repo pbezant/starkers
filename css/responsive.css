@@ -22,7 +22,7 @@
 
 @media screen and (max-width:800px){
 	#sidebar{width:150px;}
-	#content-main{margin-left:150px;padding-left:20px;}
+	#content-main{margin-left:190px;padding:0px;}
 	h1.logo{display:none;}
 	header.entry-header.mobile{display:block;}
 	header.entry-header.browser{display:none;}
@@ -30,8 +30,6 @@
 		/*margin-top:-15px;*/
 		text-align:center;
 	}
-
-	#main{margin-top:50px;}
 	
 	#footer-nav {
 		display:none;
@@ -111,7 +109,7 @@
 	.prev:after{content:"";}
 	#the-content p{text-align:left;}
 	img.tiny-logo{top:-40px;width:30px;}
-	#page-wrap{margin:0 10px 15px 10px;padding:10px 20px;}
+	#page-wrap{margin:0px;padding:0px}
 	nav{
 		margin-bottom:35px;
 		margin-top:5px;
@@ -193,9 +191,8 @@ a.mobile-menu{margin-right:5px;}
 	/* #main{padding: 0px 10px 20px;} */
 	#header{padding: 0px 10px 25px;}
 	nav ul li{margin-left:10px;}
-	#page-wrap{margin:0px; padding:10px 20px;}
+	#page-wrap{margin:0px; padding:0;}
 	#toggleText{margin:0 auto;}
-	#page-wrap{margin: 0px;padding: 10px 30px;}
 	#main{padding:0px 5px;}
 	
 	
