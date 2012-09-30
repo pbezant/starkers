@@ -35,18 +35,28 @@ body{
 }
 
 #mobile-button{
-	float:right;
 	display:none;
+	float:right;
+	position:absolute;
+	top:1em;
+	right:1em;
+	
 }
 
-ul li{display:inline; margin-left:-5%; list-style: none;}
+ul li{ margin-left:-5%; list-style: none;}
+
+#mobile-nav li{
+	clear:both;
+	text-align: center;
+
+}
 
 #main{
 	position:relative;
 	
 	min-height:500px;
 	margin:0px auto;
-	padding:0px 5%;
+	padding:0px 2em;
 	
 }
 
@@ -75,13 +85,12 @@ header{
 #showcase-nav{
 	float:left;
 	position:absolute;
-	left:-10px;
+	left:10px;
 }
 #showcase-nav-right{
 	float:right;
 	position:absolute;
-	right:-10px;
-	display:inline;
+	right:10px;
 }
 #showcase-nav-right.fixed{
 	position:fixed;
@@ -118,7 +127,7 @@ article h2{
 
 #sidebar.fixed{
 	position:fixed;
-	top:5em;
+	top:3em;
 }
 
 
@@ -154,7 +163,7 @@ article h2{
 
 #content-main.blog{
 	margin:0;
-	padding:0;
+	padding:1em 2em;
 	overflow:visible;
 
 }

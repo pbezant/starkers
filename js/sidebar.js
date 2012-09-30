@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
 	// Set up
 	var windowWidth = $(window).width();
 	var windowHeight = $(window).height();
-	var sidebarStart = $('#main').offset().top - 70;
+	var sidebarStart = $('#main').offset().top - 100;
 	var sidebarHeight = $('#sidebar').height();
 	var arrowPos = ((windowWidth - $('#main').width()) * .5) - 70;
 	$('#mobile-nav').slideToggle(0);
@@ -57,7 +57,7 @@ jQuery(document).ready(function($) {
 	function followSwitch() {
 		$('#sidebar, #showcase-nav, #showcase-nav-right').addClass('follow');
 
-		arrowPos = ((windowWidth - $('#main').width()) * .5) - 50;
+		arrowPos = ((windowWidth - $('#main').width()) * .5) - 15;
 		if (windowWidth < 600) {
 			$('#sidebar').removeClass('follow');
 		} 
@@ -77,8 +77,9 @@ jQuery(document).ready(function($) {
 			$('#showcase-nav-right').css('right', arrowPos);
 		} else {
 			$('.follow').removeClass('fixed');
-			$('#showcase-nav').css('left', -10);
-			$('#showcase-nav-right').css('right', -10);
+			$('#showcase-nav').css('left', 8);
+			$('#showcase-nav-right').css('right', 8);
+			
 			}
 		};
 	function iOSAnimate() {
