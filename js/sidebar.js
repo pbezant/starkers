@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
 	// Set up
 	var windowWidth = $(window).width();
 	var windowHeight = $(window).height();
-	var sidebarStart = $('#main').offset().top - 100;
+	var sidebarStart = $('#main').offset().top - 200;
 	var sidebarHeight = $('#sidebar').height();
 	var arrowPos = ((windowWidth - $('#main').width()) * .5) - 70;
 	$('#mobile-nav').slideToggle(0);
