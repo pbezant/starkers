@@ -43,7 +43,7 @@ body{
 	
 }
 
-ul li{ margin-left:-5%; list-style: none;}
+ul li{ list-style: none;}
 
 #mobile-nav li{
 	clear:both;
@@ -171,7 +171,7 @@ article h2{
 
 
 
-#entry-content {
+.entry-content {
 	position: relative;
 	float:left;
 	z-index: 1;
@@ -179,6 +179,25 @@ article h2{
 	width:29%;
 	min-width: 120px;
 	margin: 1%;
+}
+
+/* Images */
+#content-main.gallery ul{
+	margin: 0 1em;
+}
+#content-main.gallery img,
+.widget img {
+max-width: 97.5%; /* Fluid images for posts, comments, and widgets */
+height:auto;
+
+}
+img[class*="align"],
+img[class*="wp-image-"] {
+height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+img.size-full {
+max-width: 97.5%;
+width: auto; /* Prevent stretching of full-size images with height and width attributes in IE8 */
 }
 
 /**** Isotope Filtering ****/
@@ -231,7 +250,7 @@ article h2{
 }
 /**** End Transitions ****/
 
-#entry-content a:hover{
+.entry-content a:hover{
 	color: #000000;
 }
 

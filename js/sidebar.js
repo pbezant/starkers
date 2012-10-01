@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
 	// Set up
 	var windowWidth = $(window).width();
 	var windowHeight = $(window).height();
-	var sidebarStart = $('#main').offset().top - 200;
+	var sidebarStart = $('#main').offset().top - 70;
 	var sidebarHeight = $('#sidebar').height();
 	var arrowPos = ((windowWidth - $('#main').width()) * .5) - 70;
 	$('#mobile-nav').slideToggle(0);
@@ -57,7 +57,7 @@ jQuery(document).ready(function($) {
 	function followSwitch() {
 		$('#sidebar, #showcase-nav, #showcase-nav-right').addClass('follow');
 
-		arrowPos = ((windowWidth - $('#main').width()) * .5) - 15;
+		arrowPos = ((windowWidth - $('#main').width()) * .5) - 30;
 		if (windowWidth < 600) {
 			$('#sidebar').removeClass('follow');
 		} 

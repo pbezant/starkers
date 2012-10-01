@@ -9,7 +9,7 @@ Template Name: Home
 <div id="content-main">
 	<?php $archive_query = new WP_Query('showposts=1000');
 		while ($archive_query->have_posts()) : $archive_query->the_post(); ?>
-			<div id="entry-content" <?php post_class(); ?>>
+			<div id="" <?php post_class('entry-content'); ?>>
 			<div class="panel">
 				<div id="excerpt" class="back">
 					<a href="<?php echo get_permalink(); ?>">

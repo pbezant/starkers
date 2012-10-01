@@ -17,7 +17,7 @@
 		<?php if (is_front_page()) : ?>
 		var $container = $('#content-main');
 		$container.isotope({
-	  		itemSelector : '#entry-content',
+	  		itemSelector : '.entry-content',
 	  		masonry: {
     			columnWidth: 10
   			}
