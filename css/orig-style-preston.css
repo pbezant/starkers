@@ -1,4 +1,6 @@
-
+/* 
+	base color scheme: http://colorschemedesigner.com/#2Q42b--rrw0w0
+*/
 
 @import url(http://fonts.googleapis.com/css?family=Henny+Penny);
 html{
@@ -31,6 +33,9 @@ header{
 	background-color: #ffbf00;
  	
 }
+header a:hover {
+	color:#DB0600;
+}
 
 #content-main{
 	background-color: #000099;
@@ -38,4 +43,10 @@ header{
 
 #sidebar{
 	background-color:#066300;
+}
+#sidebar a:hover{
+	color:#ffbf00;
+}
+footer{
+	background-color:#DB0600; 
 }
