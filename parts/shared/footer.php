@@ -1,4 +1,4 @@
-	
+</div><!--.stickem container -->	
 </div><!--main -->
 </div><!--page wrap -->
 <div id="footer-wrap">

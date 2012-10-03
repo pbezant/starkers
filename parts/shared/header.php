@@ -12,4 +12,5 @@
 		<a class="mobile-menu" href="#">Menu</a>
 	</div>	
 </header>
-<div id="main">
+<div id="main" >
+	<div class="stickem-container">
