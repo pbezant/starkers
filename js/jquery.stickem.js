@@ -68,6 +68,7 @@
 			var item = {
 				$elem: $this,
 				elemHeight: $this.height(),
+				elemOffset: $this.offset(),
 				$container: $this.parents(_self.config.container),
 				isStuck: false
 			};
@@ -118,11 +119,11 @@
 
 			for(var i = 0, len = _self.items.length; i < len; i++) {
 				var item = _self.items[i];
-				
 				//If it's stuck, and we need to unstick it
 				if(item.isStuck && (pos < item.containerStart || pos > item.scrollFinish)) {
+					item.$elem.css('left','auto');
 					item.$elem.removeClass(_self.config.stickClass);
-
+					
 					//only at the bottom
 					if(pos > item.scrollFinish) {
 						item.$elem.addClass(_self.config.endStickClass);
@@ -132,7 +133,9 @@
 				
 				//If we need to stick it
 				} else if(item.isStuck === false && pos > item.containerStart && pos < item.scrollFinish) {
+					item.$elem.css('left', item.elemOffset.left);
 						item.$elem.removeClass(_self.config.endStickClass).addClass(_self.config.stickClass);
+
 						item.isStuck = true;
 				}
 			}

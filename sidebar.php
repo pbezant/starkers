@@ -10,7 +10,7 @@ function remove_images( $content ) {
 add_filter( 'the_content', 'remove_images', 100 );
 ?>
 
-<div id="sidebar" class="<?php the_title(); ?>">
+<div id="sidebar" class="<?php the_title(); ?> stickem">
 
 <?php if (have_posts()) : while (have_posts()) : the_post();?>
 <h2 id="post-<?php the_ID(); ?>"><?php the_title();?></h2>

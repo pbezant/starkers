@@ -1,22 +1,38 @@
 
 	<?php wp_footer(); ?>
 	</body>
-	<!--<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/sidebar.js" type="text/javascript"></script>-->
+
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.stickem.js" type="text/javascript"></script>
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.isotope.min.js" type="text/javascript"></script>
 	<script>
-	jQuery(document).ready(function($){
-		$('#main').stickem();
+	
 
-		
-		if ($(window).width() > 600) {
-			$('#mobile-nav').hide();
-			$('#sidebar').addClass('stickem');
-		}
+	jQuery(document).ready(function($){
+
 		$('#mobile-nav').slideToggle(0);
 		$('#mobile-button').click(function() {
 			$('#mobile-nav').slideToggle(500);
 		});
+
+		if ($(window).width() > 600) {
+			$('#mobile-nav').hide();
+			
+		}else{
+			$('#sidebar').removeClass('stickem');	
+		}
+
+		$('#main').stickem();
+	
+		$(window).resize(function() {
+			if ($(window).width() > 600) {
+				$('#mobile-nav').hide();
+				$('#sidebar').addClass('stickem');
+				
+			}else{
+				$('#sidebar').removeClass('stickem');
+			}
+		});
+		
 		$('#cat-nav h3').click(function(){
 			$('#cat-nav ul').slideToggle();
 		});
@@ -42,5 +58,6 @@
 		});
 		<?php endif; ?>
 	});
+	
 	</script>
 </html>
