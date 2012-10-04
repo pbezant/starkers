@@ -8,13 +8,15 @@
 	jQuery(document).ready(function($){
 		$('#main').stickem();
 
+		
+		if ($(window).width() > 600) {
+			$('#mobile-nav').hide();
+			$('#sidebar').addClass('stickem');
+		}
 		$('#mobile-nav').slideToggle(0);
 		$('#mobile-button').click(function() {
 			$('#mobile-nav').slideToggle(500);
 		});
-		if ($(window).height() > 600) {
-			$('#mobile-nav').hide();
-		}
 		$('#cat-nav h3').click(function(){
 			$('#cat-nav ul').slideToggle();
 		});
