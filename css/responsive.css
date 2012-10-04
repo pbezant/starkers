@@ -51,6 +51,9 @@
 		overflow:visible;
 		
 	}
+	#showcase-nav{
+		margin-left:-2em;
+	}
 	#sidebar{
 		overflow: hidden;
 		float:none; 

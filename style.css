@@ -42,6 +42,9 @@ body{
 	right:1em;
 	
 }
+header, footer{
+	margin:.5em;
+}
 
 ul li{ list-style: none;}
 
@@ -89,6 +92,7 @@ header{
 .stickit {
     position: fixed;
     top: 2em;
+    margin:0 !important;
 }
      
 .stickit-end {
@@ -101,6 +105,8 @@ header{
 #showcase-nav{
 	float:left;
 	clear:left;
+	margin-left:-2em;
+
 }
 
 #showcase-nav-right{
@@ -108,6 +114,7 @@ header{
 	clear:right;
 	margin-right:-2em;
 }
+
 
 
 article h2{

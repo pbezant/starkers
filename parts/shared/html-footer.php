@@ -31,6 +31,8 @@
 			}else{
 				$('#sidebar').removeClass('stickem');
 			}
+			$('#main').stickem();
+	
 		});
 		
 		$('#cat-nav h3').click(function(){
