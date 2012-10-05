@@ -49,11 +49,10 @@
 	#main{
 		padding:0 1.5em; 
 		overflow:visible;
+		margin:0 auto;
 		
 	}
-	#showcase-nav{
-		margin-left:-2em;
-	}
+
 	#sidebar{
 		overflow: hidden;
 		float:none; 
