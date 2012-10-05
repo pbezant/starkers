@@ -36,7 +36,18 @@ header{
 header a:hover {
 	color:#DB0600;
 }
+/*
+#showcase-nav{
 
+	background: no-repeat center center url('../images/nav-left.png');
+	background-size:contain;
+}
+
+#showcase-nav-right{
+	background: no-repeat center center url('../images/nav-right.png');
+	background-size:contain;
+}
+*/
 #content-main{
 	background-color: #000099;
 }
