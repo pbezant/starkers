@@ -115,13 +115,7 @@ header{
 	margin-right:-2em;
 }
 
-.triangle {
-border-color: transparent transparent red transparent;
-border-style: solid;
-border-width: 0px 200px 200px 200px;
-height: 0px;
-width: 0px;
-}
+
 
 
 
@@ -272,6 +266,8 @@ width: auto; /* Prevent stretching of full-size images with height and width att
 	
 }
 
+
+
 .panel {
 	font-size: 0.8em;
 	-webkit-perspective: 600px;
@@ -328,6 +324,10 @@ width: auto; /* Prevent stretching of full-size images with height and width att
     -webkit-transform: rotateY(-180deg);
     -webkit-transform-style: preserve-3d;
     -webkit-transition: all 0.4s ease-in-out 0s;
+}
+.back h2{
+	text-align: center;
+	vertical-align: center;
 }
 .panel:hover .back,
 .panel.flip .back {
