@@ -36,7 +36,7 @@ header{
 header a:hover {
 	color:#DB0600;
 }
-/*
+
 #showcase-nav{
 
 	background: no-repeat center center url('../images/nav-left.png');
@@ -44,10 +44,14 @@ header a:hover {
 }
 
 #showcase-nav-right{
-	background: no-repeat center center url('../images/nav-right.png');
-	background-size:contain;
+	border-color: transparent transparent transparent #DB0600;
+	border-style: solid;
+	border-width: 30px 0px 30px 30px;
+	border-radius:50px;
+	height: 0px;
+	width: 0px;
 }
-*/
+
 #content-main{
 	background-color: #000099;
 }

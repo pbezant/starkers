@@ -23,6 +23,7 @@
 
   $attachments = get_posts( $args );
      if ( $attachments ) {
+      $attachments = array_reverse($attachments);
         foreach ( $attachments as $attachment ) {
            echo '<li>';
            echo wp_get_attachment_image( $attachment->ID, 'full' );

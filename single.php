@@ -12,13 +12,13 @@
 <?php get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header') );?>
 
 <div id="showcase-nav" class="showcase-nav stickem previous ">
-	<?//php previous_post_link('%link', '<<'); ?>
-	<?php previous_post_link('%link','<img src="'.get_template_directory_uri().'/images/nav-left.png" width="30px" height="30px"/>'); ?>
+	<?php previous_post_link('%link', ' '); ?>
+	<?//php previous_post_link('%link','<img src="'.get_template_directory_uri().'/images/nav-left.png" width="30px" height="30px"/>'); ?>
 </div>
 
 <div id="showcase-nav-right" class="showcase-nav stickem next" >
-
-	<?php next_post_link('%link', '<img src="'.get_template_directory_uri().'/images/nav-right.png" width="30px" height="30px"/>'); ?> 
+	<?php next_post_link('%link', ' '); ?>
+	<?php // next_post_link('%link', '<img src="'.get_template_directory_uri().'/images/nav-right.png" width="30px" height="30px"/>'); ?> 
 </div>
 
 <?php 

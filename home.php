@@ -11,19 +11,21 @@ Template Name: Home
 		while ($archive_query->have_posts()) : $archive_query->the_post(); ?>
 			<div id="" <?php post_class('entry-content'); ?>>
 			<div class="panel">
+				<a href="<?php echo get_permalink(); ?>">
 				<div id="excerpt" class="back">
-					<a href="<?php echo get_permalink(); ?>">
+					
 					<?php if ( !has_post_thumbnail() ) {
 						the_excerpt(); 
 					}else{
 						echo "<h2>".get_the_title()."</h2>"; 
 					}?>
-					 </a>
+					 
 				</div>
+				</a>
 				<div class="front">
 				 	
 					<?php if ( has_post_thumbnail() ) {
-						set_post_thumbnail_size( 300, 300, true );
+						set_post_thumbnail_size( 400, 400, true );
 						the_post_thumbnail();
 					}
 					else

@@ -115,6 +115,14 @@ header{
 	margin-right:-2em;
 }
 
+.triangle {
+border-color: transparent transparent red transparent;
+border-style: solid;
+border-width: 0px 200px 200px 200px;
+height: 0px;
+width: 0px;
+}
+
 
 
 article h2{
