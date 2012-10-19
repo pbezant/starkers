@@ -1,67 +1,67 @@
+@import url(http://fonts.googleapis.com/css?family=Henny+Penny);
 /* 
 	base color scheme: http://colorschemedesigner.com/#2Q42b--rrw0w0
 */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/preston\/workspace\/wordpress\/wp-content\/themes\/starkers\/scss\/orig-style-preston\.scss}line{font-family:\000036}}
+html {
+  font-family: serif; }
 
-@import url(http://fonts.googleapis.com/css?family=Henny+Penny);
-html{
-	font-family:serif;
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/preston\/workspace\/wordpress\/wp-content\/themes\/starkers\/scss\/orig-style-preston\.scss}line{font-family:\0000310}}
+body {
+  background-image: url("../images/background.jpg");
+  background-attachment: fixed;
+  background-repeat: none; }
 
-body{
-	background-image:url('../images/background.jpg');
-	background-attachment: fixed;
-	background-repeat: none;
-}
-header,footer{
-	margin:.5em;
-}
-header, #sidebar, #content-main, footer{
-	border:1px solid black;
-	-moz-border-radius: 10px;
- 	border-radius: 10px;
- 	-moz-box-shadow: 0px 0 10px 5px #888;
-	box-shadow: 0px 0 10px 5px #888;
-}
-h1,h2,h3,h4{
-	font-family: 'Henny Penny', cursive;
-	text-decoration:none;
-	font-weight:600;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/preston\/workspace\/wordpress\/wp-content\/themes\/starkers\/scss\/orig-style-preston\.scss}line{font-family:\0000315}}
+header, footer {
+  margin: .5em; }
 
-	
-}
-header{
-	background-color: #ffbf00;
- 	
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/preston\/workspace\/wordpress\/wp-content\/themes\/starkers\/scss\/orig-style-preston\.scss}line{font-family:\0000318}}
+header, #sidebar, #content-main, footer {
+  border: 1px solid black;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 0px 0 10px 5px #888;
+  box-shadow: 0px 0 10px 5px #888; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/preston\/workspace\/wordpress\/wp-content\/themes\/starkers\/scss\/orig-style-preston\.scss}line{font-family:\0000325}}
+h1, h2, h3, h4 {
+  font-family: 'Henny Penny', cursive;
+  text-decoration: none;
+  font-weight: 600; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/preston\/workspace\/wordpress\/wp-content\/themes\/starkers\/scss\/orig-style-preston\.scss}line{font-family:\0000332}}
+header {
+  background-color: #ffbf00; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/preston\/workspace\/wordpress\/wp-content\/themes\/starkers\/scss\/orig-style-preston\.scss}line{font-family:\0000336}}
 header a:hover {
-	color:#DB0600;
-}
+  color: #DB0600; }
 
-#showcase-nav{
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/preston\/workspace\/wordpress\/wp-content\/themes\/starkers\/scss\/orig-style-preston\.scss}line{font-family:\0000340}}
+#showcase-nav {
+  background: no-repeat center center url("../images/nav-left.png");
+  background-size: contain; }
 
-	background: no-repeat center center url('../images/nav-left.png');
-	background-size:contain;
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/preston\/workspace\/wordpress\/wp-content\/themes\/starkers\/scss\/orig-style-preston\.scss}line{font-family:\0000346}}
+#showcase-nav-right {
+  border-color: transparent transparent transparent #DB0600;
+  border-style: solid;
+  border-width: 30px 0px 30px 30px;
+  height: 0px;
+  width: 0px; }
 
-#showcase-nav-right{
-	border-color: transparent transparent transparent #DB0600;
-	border-style: solid;
-	border-width: 30px 0px 30px 30px;
-	border-radius:50px;
-	height: 0px;
-	width: 0px;
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/preston\/workspace\/wordpress\/wp-content\/themes\/starkers\/scss\/orig-style-preston\.scss}line{font-family:\0000354}}
+#content-main {
+  background-color: #000099; }
 
-#content-main{
-	background-color: #000099;
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/preston\/workspace\/wordpress\/wp-content\/themes\/starkers\/scss\/orig-style-preston\.scss}line{font-family:\0000358}}
+#sidebar {
+  background-color: #066300; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/preston\/workspace\/wordpress\/wp-content\/themes\/starkers\/scss\/orig-style-preston\.scss}line{font-family:\0000360}}
+  #sidebar a:hover {
+    color: #ffbf00; }
 
-#sidebar{
-	background-color:#066300;
-}
-#sidebar a:hover{
-	color:#ffbf00;
-}
-footer{
-	background-color:#DB0600; 
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/preston\/workspace\/wordpress\/wp-content\/themes\/starkers\/scss\/orig-style-preston\.scss}line{font-family:\0000364}}
+footer {
+  background-color: #DB0600; }

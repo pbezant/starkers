@@ -29,6 +29,9 @@
            echo wp_get_attachment_image( $attachment->ID, 'full' );
            echo '<p>';
            echo apply_filters( 'the_title', $attachment->post_title );
+           echo '</p><p>';
+           echo get_post_field('post_excerpt', $attachment->ID);
+
            echo '</p></li>';
           }
      }
