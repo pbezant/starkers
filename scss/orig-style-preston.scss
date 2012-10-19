@@ -1,0 +1,66 @@
+/* 
+	base color scheme: http://colorschemedesigner.com/#2Q42b--rrw0w0
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Henny+Penny);
+html{
+	font-family:serif;
+}
+
+body{
+	background-image:url('../images/background.jpg');
+	background-attachment: fixed;
+	background-repeat: none;
+}
+header,footer{
+	margin:.5em;
+}
+header, #sidebar, #content-main, footer{
+	border:1px solid black;
+	-moz-border-radius: 10px;
+ 	border-radius: 10px;
+ 	-moz-box-shadow: 0px 0 10px 5px #888;
+	box-shadow: 0px 0 10px 5px #888;
+}
+h1,h2,h3,h4{
+	font-family: 'Henny Penny', cursive;
+	text-decoration:none;
+	font-weight:600;
+
+	
+}
+header{
+	background-color: #ffbf00;
+ 	
+}
+header a:hover {
+	color:#DB0600;
+}
+
+#showcase-nav{
+
+	background: no-repeat center center url('../images/nav-left.png');
+	background-size:contain;
+}
+
+#showcase-nav-right{
+	border-color: transparent transparent transparent #DB0600;
+	border-style: solid;
+	border-width: 30px 0px 30px 30px;
+	height: 0px;
+	width: 0px;
+}
+
+#content-main{
+	background-color: #000099;
+}
+
+#sidebar{
+	background-color:#066300;
+	a:hover{
+		color:#ffbf00;
+	}
+}
+footer{
+	background-color:#DB0600; 
+}
