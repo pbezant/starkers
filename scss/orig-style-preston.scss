@@ -61,10 +61,27 @@ header a:hover {
 
 #content-main{
 	background-color: #000099;
+	li{
+		padding:0.5rem 0.5rem 1rem 0.5rem;
+		text-align:center;
+		background-color:#fff;
+		img{
+			border:1px solid #000;
+		}
+		#title{
+
+		} 
+		#caption{
+			margin:0 auto;
+			font-size:0.8rem;
+			line-height:0.8rem;
+			width:60%;
+		}
+	}
 	article{
 		padding:1em;
 		@include borderRadius(10px);
-		background:transparent url("../images/cardboard_flat.png");
+		background:transparent url("../images/watercolor-paper.jpg");
 		time{
 			text-align:right;
 			float:right;
@@ -74,7 +91,6 @@ header a:hover {
 		}
 		p{
 			clear:both;
-			display:block;
 		}
 	}
 	.panel{

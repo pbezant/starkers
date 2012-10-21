@@ -80,7 +80,6 @@ header{
 
 #main{
 	position:relative;
-	min-height:500px;
 	margin:0px 2em;
 	padding:0em;	
 }
@@ -153,15 +152,14 @@ article h2{
 
 
 
-#content-main{
-	min-height:1000px;
+#content-main, #content-main.gallery{
 	margin-left:285px;
 	margin-bottom:60px;
 	overflow:hidden;
 	padding:.5em;
 }
 
-#content-main.blog{
+#content-main.blog, #content-main.quote, #content-main.status{
 	margin:auto;
 	overflow:visible;
 }
@@ -180,6 +178,9 @@ article h2{
 /* Images */
 #content-main.gallery ul{
 	margin: 0 1em;
+}
+#content-main.gallery ul li{
+	margin-bottom:2rem;
 }
 #content-main.gallery img,
 .widget img {

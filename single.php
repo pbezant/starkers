@@ -26,9 +26,7 @@
 	if($format == 'gallery'){
 		get_template_part('sidebar');
 	}
-	else{
-		$format = 'blog';
-	}
+	
 ?>
 <div id="content-main" class="<?php echo $format ?>">
 
