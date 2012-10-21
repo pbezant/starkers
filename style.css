@@ -14,9 +14,7 @@ Color
 Text
 Other
 */
-*{
 
-}
 body{
 	background-color:#DBD9D4;
 	font-size:17px;
@@ -106,14 +104,12 @@ header{
 
 #showcase-nav.previous{
 	float:left;
-	clear:left;
 	margin-left:-2em;
 
 }
 
 #showcase-nav.next{
 	float:right;
-	clear:right;
 	margin-right:-2em;
 }
 
@@ -166,9 +162,8 @@ article h2{
 }
 
 #content-main.blog{
-	margin:0;
+	margin:auto;
 	overflow:visible;
-
 }
 
 #entry-content {
@@ -253,7 +248,7 @@ width: auto; /* Prevent stretching of full-size images with height and width att
 
 /**** End Transitions ****/
 
-.entry-content a:hover{
+#entry-content a:hover{
 	color: #000000;
 }
 
