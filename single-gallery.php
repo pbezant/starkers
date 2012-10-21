@@ -27,12 +27,11 @@
         foreach ( $attachments as $attachment ) {
            echo '<li>';
            echo wp_get_attachment_image( $attachment->ID, 'full' );
-           echo '<p>';
+           echo '<div class="title">';
            echo apply_filters( 'the_title', $attachment->post_title );
-           echo '</p><p>';
+           echo '</div><div id="caption">';
            echo get_post_field('post_excerpt', $attachment->ID);
-
-           echo '</p></li>';
+           echo '</div></li>';
           }
      }
 

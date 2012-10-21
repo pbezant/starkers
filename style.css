@@ -14,7 +14,9 @@ Color
 Text
 Other
 */
+*{
 
+}
 body{
 	background-color:#DBD9D4;
 	font-size:17px;
@@ -102,14 +104,14 @@ header{
 }
 
 
-#showcase-nav{
+#showcase-nav.previous{
 	float:left;
 	clear:left;
 	margin-left:-2em;
 
 }
 
-#showcase-nav-right{
+#showcase-nav.next{
 	float:right;
 	clear:right;
 	margin-right:-2em;
@@ -165,14 +167,12 @@ article h2{
 
 #content-main.blog{
 	margin:0;
-	padding:1em 2em;
 	overflow:visible;
 
 }
 
-
-
-.entry-content {
+#entry-content {
+	
 	position: relative;
 	float:left;
 	z-index: 1;
@@ -269,9 +269,12 @@ width: auto; /* Prevent stretching of full-size images with height and width att
 
 
 .panel {
-	font-size: 0.8em;
+	width:100%;
+	height:100%;
+	font-size: 1rem;
 	-webkit-perspective: 600px;
     -moz-perspective: 600px; 
+
 }
 .panel .front {
 	position: absolute;
@@ -279,10 +282,13 @@ width: auto; /* Prevent stretching of full-size images with height and width att
     left: 0;
     top: 0;
     z-index: 900;
-	width:100%;
-	height:100%;
+	width:inherit;
+	height:inherit;
 	background: none repeat scroll 0 0 rgb(107, 112, 119);
-	text-align: center;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
 	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.9);
 	
     -moz-backface-visibility: hidden;
@@ -294,6 +300,11 @@ width: auto; /* Prevent stretching of full-size images with height and width att
     -webkit-transform: rotateX(0deg) rotateY(0deg);
     -webkit-transform-style: preserve-3d;
     -webkit-transition: all 0.4s ease-in-out 0s;
+}
+.panel .front img{
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
 }
 .panel:hover .front,
 .panel.flip .front{
@@ -325,10 +336,12 @@ width: auto; /* Prevent stretching of full-size images with height and width att
     -webkit-transform-style: preserve-3d;
     -webkit-transition: all 0.4s ease-in-out 0s;
 }
-.back h2{
+.back h2, .front h2{
+	padding:0 0.3rem;
 	text-align: center;
 	vertical-align: center;
 }
+
 .panel:hover .back,
 .panel.flip .back {
 	z-index: 1000;
@@ -413,6 +426,7 @@ img.tiny-logo{
 em{font-weight:inherit;}
 
 a{
+	display:block;
 	text-decoration:none;
 	color:#000;
 	transition: all .3s ease-in-out;

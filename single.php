@@ -11,12 +11,12 @@
 ?>
 <?php get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header') );?>
 
-<div id="showcase-nav" class="showcase-nav stickem previous ">
+<div id="showcase-nav" class="stickem previous ">
 	<?php previous_post_link('%link', ' '); ?>
 	<?//php previous_post_link('%link','<img src="'.get_template_directory_uri().'/images/nav-left.png" width="30px" height="30px"/>'); ?>
 </div>
 
-<div id="showcase-nav-right" class="showcase-nav stickem next" >
+<div id="showcase-nav" class="stickem next" >
 	<?php next_post_link('%link', ' '); ?>
 	<?php // next_post_link('%link', '<img src="'.get_template_directory_uri().'/images/nav-right.png" width="30px" height="30px"/>'); ?> 
 </div>
@@ -42,7 +42,8 @@
 	?>
 	<article>
 		<h2><?php the_title(); ?></h2>
-		<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?> <?php the_time(); ?></time> <?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?>
+		<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?> <?php the_time(); ?></time> 
+		<div id="comment"><?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?></div>
 		<?php the_content(); ?>			
 
 		<?php if ( get_the_author_meta( 'description' ) ) : ?>
