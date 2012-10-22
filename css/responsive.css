@@ -22,7 +22,7 @@
 
 @media screen and (max-width:800px){
 	#sidebar{width:150px;}
-	#content-main{margin-left:190px;padding:0px;}
+	#main #content-main{margin-left:190px;padding:0px;}
 	h1.logo{display:none;}
 	header.entry-header.mobile{display:block;}
 	header.entry-header.browser{display:none;}
