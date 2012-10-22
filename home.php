@@ -6,7 +6,7 @@ Template Name: Home
 
 <?php get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header', 'sidebar') ); ?>
 
-<div id="content-main">
+<div id="content-main" class="home">
 	<?php $archive_query = new WP_Query('showposts=1000');
 		while ($archive_query->have_posts()) : $archive_query->the_post(); ?>
 			<div id="entry-content" <?php post_class(); ?>>

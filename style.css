@@ -156,18 +156,19 @@ article h2{
 }
 
 
-
-#content-main, #content-main.gallery{
-	margin-left:285px;
-	margin-bottom:60px;
-	overflow:hidden;
+#content-main{
 	padding:.5em;
-}
-
-#content-main.blog, #content-main.quote, #content-main.status{
 	margin:auto;
 	overflow:visible;
 }
+
+#content-main.home, #content-main.gallery{
+	margin-left:285px;
+	margin-bottom:60px;
+	overflow:hidden;
+}
+
+
 
 #entry-content {
 	

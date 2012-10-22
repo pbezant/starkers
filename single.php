@@ -12,13 +12,15 @@
 <?php get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header') );?>
 
 <div id="showcase-nav" class="stickem previous ">
-	<?php previous_post_link('%link', ' '); ?>
-	<?//php previous_post_link('%link','<img src="'.get_template_directory_uri().'/images/nav-left.png" width="30px" height="30px"/>'); ?>
+	<?php if($link = previous_post_link('%link', ' ')){
+		echo $link;
+	}?>
 </div>
 
 <div id="showcase-nav" class="stickem next" >
-	<?php next_post_link('%link', ' '); ?>
-	<?php // next_post_link('%link', '<img src="'.get_template_directory_uri().'/images/nav-right.png" width="30px" height="30px"/>'); ?> 
+	<?php if($link = next_post_link('%link', ' ')){
+		echo $link;
+	}?>
 </div>
 
 <?php 
@@ -26,6 +28,7 @@
 	if($format == 'gallery'){
 		get_template_part('sidebar');
 	}
+	if(is_front_page()) $format = 'home'
 	
 ?>
 <div id="content-main" class="<?php echo $format ?>">
