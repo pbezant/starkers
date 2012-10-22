@@ -45,11 +45,11 @@ header a:hover {
 #showcase-nav{
 	width:2rem;
 	height:4rem;
-	&.previous{
+	&.previous a{
 		background: url('../images/nav-left.png') no-repeat left center;
 		background-size:contain;
 	}
-	&.next{
+	&.next a{
 		background: url('../images/nav-right.png') no-repeat right center;
 		background-size:contain;
 	}

@@ -43,11 +43,11 @@ header a:hover {
   width: 2rem;
   height: 4rem; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/preston\/workspace\/wordpress\/wp-content\/themes\/starkers\/scss\/orig-style-preston\.scss}line{font-family:\0000348}}
-  #showcase-nav.previous {
+  #showcase-nav.previous a {
     background: url("../images/nav-left.png") no-repeat left center;
     background-size: contain; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/preston\/workspace\/wordpress\/wp-content\/themes\/starkers\/scss\/orig-style-preston\.scss}line{font-family:\0000352}}
-  #showcase-nav.next {
+  #showcase-nav.next a {
     background: url("../images/nav-right.png") no-repeat right center;
     background-size: contain; }
 

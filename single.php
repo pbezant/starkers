@@ -11,24 +11,20 @@
 ?>
 <?php get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header') );?>
 
-<div id="showcase-nav" class="stickem previous ">
-	<?php if($link = previous_post_link('%link', ' ')){
-		echo $link;
-	}?>
+<div id="showcase-nav" class="stickem previous">
+	<?php if($prev = previous_post_link('%link', ' ')):echo $prev; endif; ?>
+</div>
+<div id="showcase-nav" class="stickem next" >
+<?php if($next = next_post_link('%link', ' ')): echo $next; endif;?>
 </div>
 
-<div id="showcase-nav" class="stickem next" >
-	<?php if($link = next_post_link('%link', ' ')){
-		echo $link;
-	}?>
-</div>
 
 <?php 
 	$format = get_post_format();
 	if($format == 'gallery'){
 		get_template_part('sidebar');
 	}
-	if(is_front_page()) $format = 'home'
+
 	
 ?>
 <div id="content-main" class="<?php echo $format ?>">

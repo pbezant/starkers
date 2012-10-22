@@ -158,14 +158,13 @@ article h2{
 
 #content-main{
 	padding:.5em;
-	margin:auto;
-	overflow:visible;
+	margin:10px auto;
+	overflow:hidden;
 }
 
 #content-main.home, #content-main.gallery{
 	min-height: 500px;
 	margin-left:285px;
-	margin-bottom:60px;
 }
 
 
