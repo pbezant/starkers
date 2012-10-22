@@ -25,8 +25,15 @@ Template Name: Home
 				<div class="front">
 				 	
 					<?php if ( has_post_thumbnail() ) {
-						set_post_thumbnail_size( 200, 200, true );
-						the_post_thumbnail();
+						//set_post_thumbnail_size( 200, 200, true );
+						//the_post_thumbnail();
+						$post_image_id = get_post_thumbnail_id($post->ID);
+						if ($post_image_id) {
+							$thumbnail = wp_get_attachment_image_src( $post_image_id, 'post-thumbnail', false);
+							if ($thumbnail) (string)$thumbnail = $thumbnail[0];
+							echo '<div style="background:#666 url(\''.$thumbnail.'\') center center no-repeat scroll; width:100%; height:100%;"></div>';
+						}
+						
 					}
 					else
 						echo "<h2>".get_the_title()."</h2>"; ?>

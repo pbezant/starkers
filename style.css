@@ -422,7 +422,6 @@ img.tiny-logo{
 em{font-weight:inherit;}
 
 a{
-	display:block;
 	text-decoration:none;
 	color:#000;
 	transition: all .3s ease-in-out;
