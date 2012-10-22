@@ -29,9 +29,9 @@ Template Name: Home
 						//the_post_thumbnail();
 						$post_image_id = get_post_thumbnail_id($post->ID);
 						if ($post_image_id) {
-							$thumbnail = wp_get_attachment_image_src( $post_image_id, 'post-thumbnail', false);
+							$thumbnail = wp_get_attachment_image_src( $post_image_id, 'featured', false);
 							if ($thumbnail) (string)$thumbnail = $thumbnail[0];
-							echo '<div style="background:#666 url(\''.$thumbnail.'\') center center no-repeat scroll; width:100%; height:100%;"></div>';
+							echo '<div style="background:#666 url(\''.$thumbnail.'\') center center no-repeat scroll; background-size:cover; width:100%; height:100%;"></div>';
 						}
 						
 					}
