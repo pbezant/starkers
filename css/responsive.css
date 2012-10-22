@@ -57,7 +57,7 @@
 		margin: .5em auto; 
 	}
 
-	#content-main, #content-main.blog{
+	#main #content-main{
 		margin:.5em;
 		padding-left:0px;
 		padding-bottom:0px;

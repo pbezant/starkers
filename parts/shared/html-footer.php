@@ -44,7 +44,7 @@
 		});
 		
 		<?php if (is_front_page()) : ?>
-		var $container = $('#content-main');
+		var $container = $('#content-main.home');
 		$container.isotope({
 	  		itemSelector : '#entry-content',
 	  		masonry: {

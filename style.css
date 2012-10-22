@@ -165,13 +165,11 @@ article h2{
 #content-main.home, #content-main.gallery{
 	margin-left:285px;
 	margin-bottom:60px;
-	overflow:hidden;
 }
 
 
 
 #entry-content {
-	
 	position: relative;
 	float:left;
 	z-index: 1;
