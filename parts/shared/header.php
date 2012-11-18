@@ -11,6 +11,8 @@
 	<div id="mobile-button">
 		<a class="mobile-menu" href="#">Menu</a>
 	</div>	
+	<?php if ( !function_exists('dynamic_sidebar')  || !dynamic_sidebar('header-sidebar') ) : ?>  
+<?php endif; ?>  
 </header>
 <div id="main" >
 	<div class="stickem-container">

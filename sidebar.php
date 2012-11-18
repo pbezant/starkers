@@ -42,7 +42,7 @@ add_filter('the_content', 'strip_shortcodes');
 	<?php endif; ?>
 <?php endwhile; endif; ?>
 
-<?php if ( !function_exists('dynamic_sidebar')  || !dynamic_sidebar() ) : ?>  
+<?php if ( !function_exists('dynamic_sidebar')  || !dynamic_sidebar('left-sidebar') ) : ?>  
 <?php endif; ?>  
 </div>  
 <?php remove_filter( 'the_content', 'remove_images' ); ?>

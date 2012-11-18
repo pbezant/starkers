@@ -97,9 +97,21 @@
 		</li>
 		<?php 
 	}
-//Get Funcy
+//Get Func-y
     if ( function_exists('register_sidebar') )  
-        register_sidebar(array(  
+        register_sidebar(array('name'=>'left-sidebar',
+            'before_widget' => '',  
+            'after_widget' => '',  
+            'before_title' => '<h2>',  
+            'after_title' => '</h2>',  
+        ));
+         register_sidebar(array('name'=>'header-sidebar',
+            'before_widget' => '',  
+            'after_widget' => '',  
+            'before_title' => '<h2>',  
+            'after_title' => '</h2>',  
+        ));
+          register_sidebar(array('name'=>'footer-sidebar',
             'before_widget' => '',  
             'after_widget' => '',  
             'before_title' => '<h2>',  
