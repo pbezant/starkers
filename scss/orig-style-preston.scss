@@ -2,14 +2,17 @@
 base color scheme: http://colorschemedesigner.com/#2Q42b--rrw0w0
 */
 @mixin boxShadow($arg){
+	-webkit-box-shadow:$arg;
 	-moz-box-shadow: $arg;
 	box-shadow: $arg;
 }
 @mixin borderRadius($arg){
+	-webkit-border-radius: $arg;
 	-moz-border-radius: $arg;
  	border-radius: $arg;
 }
 @import url(http://fonts.googleapis.com/css?family=Henny+Penny);
+
 html{
 	font-family:serif;
 }

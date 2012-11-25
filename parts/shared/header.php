@@ -11,8 +11,10 @@
 	<div id="mobile-button">
 		<a class="mobile-menu" href="#">Menu</a>
 	</div>	
+	<div id="header-sidebar">
 	<?php if ( !function_exists('dynamic_sidebar')  || !dynamic_sidebar('header-sidebar') ) : ?>  
-<?php endif; ?>  
+<?php endif; ?> 
+	</dvi> 
 </header>
 <div id="main" >
 	<div class="stickem-container">
